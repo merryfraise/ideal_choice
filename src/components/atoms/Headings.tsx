@@ -1,16 +1,19 @@
+import React from 'react';
+
 type HeadingsProps = {
   heading: string;
-  text: string;
+  children: React.ReactNode;
 };
 
-export default function HeadingsComponent(props: HeadingsProps) {
-  const heading = props.heading;
-
+export default function HeadingsComponent({
+  heading,
+  children,
+}: HeadingsProps) {
   switch (heading) {
     case 'h1':
-      return <h1>{props.text}</h1>;
+      return <h1>{children}</h1>;
     case 'h2':
-      return <h2>{props.text}</h2>;
+      return <h2>{children}</h2>;
     default:
       return null;
   }
