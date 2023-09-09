@@ -4,6 +4,6 @@ type ParagraphProps = {
   children: React.ReactNode;
 };
 
-export default function ParagraphComponent({ children }: ParagraphProps) {
+export default function Paragraph({ children }: ParagraphProps) {
   return <p>{children}</p>;
 }

@@ -5,10 +5,7 @@ type HeadingsProps = {
   children: React.ReactNode;
 };
 
-export default function HeadingsComponent({
-  heading,
-  children,
-}: HeadingsProps) {
+export default function Headings({ heading, children }: HeadingsProps) {
   switch (heading) {
     case 'h1':
       return <h1>{children}</h1>;
