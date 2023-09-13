@@ -1,0 +1,51 @@
+@import 'reset.css';
+@font-face {
+  font-family: 'Eulyoo1945';
+  src: url('/fonts/Eulyoo1945-Regular.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Eulyoo1945';
+}
+
+:root {
+  /* colors */
+  --black: #0a001a;
+  --violet1: #8d4cf6;
+  --violet2: #9d8aba;
+  --violet3: #e0cdfc;
+  --white: #f6f2ff;
+
+  /* glows */
+  --white-glow: 0px 0px 50px var(--white);
+  --violet-glow: 0px 0px 50px var(--violet3);
+
+  /* font size */
+  --large-font: 48px;
+  --medium-font: 32px;
+  --small-font: 24px;
+
+  /* font weight */
+  --regular-weight: 400;
+  --semibold-weight: 600;
+}
+
+body {
+  background-color: var(--black);
+}
+
+h1 {
+  font-size: 48px;
+  color: var(--violet3);
+}
+
+h2 {
+  font-size: 46px;
+  color: var(--white2);
+}
+
+h3 {
+  font-size: 24px;
+  color: var(--black);
+}
