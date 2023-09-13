@@ -35,6 +35,12 @@ body {
   background-color: var(--black);
 }
 
+h1,
+h2,
+h3 {
+  font-weight: var(--semibold-weight);
+}
+
 h1 {
   font-size: 48px;
   color: var(--violet3);
