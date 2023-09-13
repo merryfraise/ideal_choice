@@ -10,7 +10,7 @@ const navStyle = css`
   font-size: var(--medium);
   color: var(--violet2);
 
-  > div {
+  div:not(:first-child) {
     margin-left: 40px;
   }
 `;
