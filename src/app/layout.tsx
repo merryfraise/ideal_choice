@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/global.css';
 import type { Metadata } from 'next';
 import Header from '@/components/organisms/Header';
 
