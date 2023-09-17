@@ -11,16 +11,12 @@ const headerStyle = css`
   justify-content: space-between;
   width: 100%;
   padding: 34px;
-
-  .a_header:active {
-    text-shadow: none;
-  }
 `;
 
 export default function Header() {
   return (
     <header css={headerStyle}>
-      <Link href="/" className="a_header">
+      <Link href="/">
         <Headings heading="h1">아마도 이상적인 선택들</Headings>
       </Link>
       <Navigation />
