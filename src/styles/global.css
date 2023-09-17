@@ -78,3 +78,7 @@ a.active {
   text-shadow: var(--violet-glow16);
   color: var(--violet3);
 }
+
+p {
+  line-height: 1.6;
+}
