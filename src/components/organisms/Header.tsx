@@ -2,6 +2,7 @@
 'use client';
 
 import { css } from '@emotion/react';
+import Link from 'next/link';
 import Headings from '../atoms/Headings';
 import Navigation from '../molecules/Navigation';
 
@@ -10,12 +11,18 @@ const headerStyle = css`
   justify-content: space-between;
   width: 100%;
   padding: 34px;
+
+  .a_header:active {
+    text-shadow: none;
+  }
 `;
 
 export default function Header() {
   return (
     <header css={headerStyle}>
-      <Headings heading="h1">아마도 이상적인 선택들</Headings>
+      <Link href="/" className="a_header">
+        <Headings heading="h1">아마도 이상적인 선택들</Headings>
+      </Link>
       <Navigation />
     </header>
   );
