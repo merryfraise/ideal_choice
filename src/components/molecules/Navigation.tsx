@@ -1,8 +1,7 @@
 /** @jsxImportSource @emotion/react */
 'use client';
 
-import React from 'react';
-import Text from '../atoms/Text';
+import Link from 'next/link';
 import { css } from '@emotion/react';
 
 const navStyle = css`
@@ -10,7 +9,7 @@ const navStyle = css`
   font-size: var(--medium);
   color: var(--violet2);
 
-  div:not(:first-child) {
+  a:not(:first-child) {
     margin-left: 40px;
   }
 `;
@@ -18,9 +17,9 @@ const navStyle = css`
 export default function Navigation() {
   return (
     <nav css={navStyle}>
-      <Text>이상적인 소개</Text>
-      <Text>이상적인 응답자</Text>
-      <Text>이상적인 질문</Text>
+      <Link href="/intro1">이상적인 소개</Link>
+      <Link href="/intro2">이상적인 응답자</Link>
+      <Link href="/intro3">이상적인 질문</Link>
     </nav>
   );
 }
