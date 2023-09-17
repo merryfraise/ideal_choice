@@ -19,7 +19,8 @@
 
   /* glows */
   --white-glow: 0px 0px 50px var(--white);
-  --violet-glow: 0px 0px 50px var(--violet3);
+  --violet-glow16: 0px 0px 16px var(--violet3);
+  --violet-glow50: 0px 0px 50px var(--violet3);
 
   /* font size */
   --large-font: 48px;
@@ -54,4 +55,17 @@ h2 {
 h3 {
   font-size: 24px;
   color: var(--black);
+}
+
+a {
+  text-decoration: none;
+  color: var(--violet2);
+}
+
+a:hover {
+  text-shadow: var(--violet-glow16);
+}
+
+a:active {
+  color: var(--violet3);
 }
