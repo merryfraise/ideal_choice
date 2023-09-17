@@ -2,14 +2,13 @@
 'use client';
 
 import Image from 'next/image';
-import introImg from '../../../public/images/intro_bg.png';
 import Paragraph from '@/components/atoms/Paragraph';
 import introStyle from '@/styles/introStyle';
 
 export default function Page() {
   return (
     <article css={introStyle}>
-      <Image src={introImg} alt="background image" fill />
+      <Image src="images/intro_bg.png" alt="background image" fill />
       <Paragraph>
         이상적인 응답자 바드는 2023년 3월 21일에 강림하였습니다.
       </Paragraph>

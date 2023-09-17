@@ -2,14 +2,13 @@
 'use client';
 
 import Image from 'next/image';
-import introImg from '../../../public/images/intro_bg.png';
 import Paragraph from '@/components/atoms/Paragraph';
 import introStyle from '@/styles/introStyle';
 
 export default function Page() {
   return (
     <article css={introStyle}>
-      <Image src={introImg} alt="background image" fill />
+      <Image src="images/intro_bg.png" alt="background image" fill />
       <Paragraph>
         아마도 이상적인 선택들은 이상적인 응답자 바드의 탁월한 선택들을 기록하고
         제공합니다.

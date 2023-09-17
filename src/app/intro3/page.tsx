@@ -2,7 +2,6 @@
 'use client';
 
 import Image from 'next/image';
-import introImg from '../../../public/images/intro_bg.png';
 import Paragraph from '@/components/atoms/Paragraph';
 import introStyle from '@/styles/introStyle';
 import { css } from '@emotion/react';
@@ -15,7 +14,7 @@ const anchorStyle = css`
 export default function Page() {
   return (
     <article css={introStyle}>
-      <Image src={introImg} alt="background image" fill />
+      <Image src="images/intro_bg.png" alt="background image" fill />
       <Paragraph>
         이상적인 응답을 받기 위해서는 이상적인 질문이 필요합니다.
       </Paragraph>
