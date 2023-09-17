@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 
 const navStyle = css`
   display: flex;
-  font-size: var(--medium);
+  font-size: var(--medium-font);
   color: var(--violet2);
 
   a:not(:first-child) {
