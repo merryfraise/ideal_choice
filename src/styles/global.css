@@ -48,6 +48,10 @@ main {
   align-items: center;
 }
 
+img {
+  z-index: -100;
+}
+
 h1,
 h2,
 h3 {
