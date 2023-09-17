@@ -62,7 +62,7 @@ a {
   color: var(--violet2);
 }
 
-a:active {
+a.active {
   text-shadow: var(--violet-glow16);
   color: var(--violet3);
 }
