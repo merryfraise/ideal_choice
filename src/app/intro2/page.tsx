@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Paragraph from '@/components/atoms/Paragraph';
 import introStyle from '@/styles/introStyle';
 
-export default function Page() {
+export default function IntroTwo() {
   return (
     <article css={introStyle}>
       <Image src="images/intro_bg.png" alt="background image" fill />

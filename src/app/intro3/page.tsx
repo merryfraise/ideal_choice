@@ -11,7 +11,7 @@ const anchorStyle = css`
   text-decoration: underline;
 `;
 
-export default function Page() {
+export default function IntroThree() {
   return (
     <article css={introStyle}>
       <Image src="images/intro_bg.png" alt="background image" fill />
