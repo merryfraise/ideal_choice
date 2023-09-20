@@ -8,6 +8,7 @@ const logoStyle = css`
   position: relative;
   width: 565px;
   height: 565px;
+  margin: 40px;
 
   img {
     filter: drop-shadow(var(--violet-glow50));
