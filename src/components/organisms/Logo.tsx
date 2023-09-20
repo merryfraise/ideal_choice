@@ -6,25 +6,27 @@ import Image from 'next/image';
 
 const logoStyle = css`
   position: relative;
-  width: 565px;
-  height: 565px;
   margin: 40px;
 
   img {
     filter: drop-shadow(var(--violet-glow50));
   }
 
-  .straight_container,
   .diagonal_container,
   .center_container {
     position: absolute;
-  }
-
-  .diagonal_container,
-  .center_container {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+  }
+
+  .diagonal_container {
+    margin-left: calc(-229px / 2);
+    margin-top: calc(-229px / 2);
+  }
+
+  .center_container {
+    margin-left: calc(-42px / 2);
+    margin-top: calc(-42px / 2);
   }
 `;
 
