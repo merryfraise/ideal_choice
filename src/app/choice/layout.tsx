@@ -4,4 +4,11 @@ type ChoiceLayoutProps = {
   children: React.ReactNode;
 };
 
-export default function ChoiceLayout({ children }: ChoiceLayoutProps) {}
+export default function ChoiceLayout({ children }: ChoiceLayoutProps) {
+  return (
+    <section>
+      <aside></aside>
+      <article></article>
+    </section>
+  );
+}
