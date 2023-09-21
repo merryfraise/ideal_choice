@@ -8,8 +8,13 @@ import introStyle from '@/styles/introStyle';
 export default function IntroOne() {
   return (
     <article css={introStyle}>
-      <Image src="images/intro_bg.png" alt="background image" fill />
-      <div className='p_intro'>
+      <Image
+        src="images/intro_bg.png"
+        alt="background image"
+        fill
+        priority={true}
+      />
+      <div className="p_intro">
         <Paragraph>
           아마도 이상적인 선택들은 이상적인 응답자 바드의 탁월한 선택들을
           기록하고 제공합니다.

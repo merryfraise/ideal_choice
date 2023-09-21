@@ -60,7 +60,12 @@ const mainStyle = css`
 export default function Home() {
   return (
     <section css={mainStyle}>
-      <Image src="/images/main_bg.png" alt="background image" fill />
+      <Image
+        src="/images/main_bg.png"
+        alt="background image"
+        fill
+        priority={true}
+      />
       <Link href="/choice/random">
         <div className="logo">
           <Text>A</Text>

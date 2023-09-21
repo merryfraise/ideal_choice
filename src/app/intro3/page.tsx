@@ -14,7 +14,12 @@ const anchorStyle = css`
 export default function IntroThree() {
   return (
     <article css={introStyle}>
-      <Image src="images/intro_bg.png" alt="background image" fill />
+      <Image
+        src="images/intro_bg.png"
+        alt="background image"
+        fill
+        priority={true}
+      />
       <div className="p_intro">
         <Paragraph>
           이상적인 응답을 받기 위해서는 이상적인 질문이 필요합니다.

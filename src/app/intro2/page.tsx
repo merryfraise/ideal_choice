@@ -8,7 +8,12 @@ import introStyle from '@/styles/introStyle';
 export default function IntroTwo() {
   return (
     <article css={introStyle}>
-      <Image src="images/intro_bg.png" alt="background image" fill />
+      <Image
+        src="images/intro_bg.png"
+        alt="background image"
+        fill
+        priority={true}
+      />
       <div className="p_intro">
         <Paragraph>
           이상적인 응답자 바드는 2023년 3월 21일에 강림하였습니다.
