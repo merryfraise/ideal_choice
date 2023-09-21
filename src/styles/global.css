@@ -8,10 +8,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Eulyoo1945';
-}
-
 :root {
   /* colors */
   --black: #0a001a;
@@ -42,13 +38,11 @@ body {
 
 body {
   background-color: var(--black);
+  font-family: 'Eulyoo1945';
 }
 
 main {
   height: calc(100% - 116px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 img {

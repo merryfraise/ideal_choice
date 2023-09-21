@@ -14,7 +14,7 @@ const mainStyle = css`
 
   .logo {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-size: var(--large-font);
     font-weight: var(--semibold-weight);
