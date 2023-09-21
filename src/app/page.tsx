@@ -8,13 +8,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const mainStyle = css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--violet3);
   font-size: var(--small-font);
   text-shadow: var(--violet-glow50);
 
   .logo {
     display: flex;
-    justify-content: center;
     align-items: center;
     font-size: var(--large-font);
     font-weight: var(--semibold-weight);
