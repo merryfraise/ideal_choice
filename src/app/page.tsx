@@ -59,7 +59,7 @@ export default function Home() {
   return (
     <section css={mainStyle}>
       <Image src="/images/main_bg.png" alt="background image" fill />
-      <Link href="/random">
+      <Link href="/choice/random">
         <div className="logo">
           <Text>A</Text>
           <Logo />
