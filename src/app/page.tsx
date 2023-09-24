@@ -66,7 +66,7 @@ export default function Home() {
         fill
         priority={true}
       />
-      <Link href="/choice/random">
+      <Link href="/random">
         <div className="logo">
           <Text>A</Text>
           <Logo />
