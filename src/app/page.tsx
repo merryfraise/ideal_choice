@@ -43,12 +43,12 @@ const mainStyle = css`
     }
 
     .straight_container {
-      transform: rotate(-45deg);
+      transform: rotate(-90deg);
     }
 
     .diagonal_container,
     .center_container {
-      transform: rotate(45deg);
+      transform: rotate(90deg);
     }
   }
 

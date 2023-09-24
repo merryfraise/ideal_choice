@@ -19,14 +19,23 @@ const logoStyle = css`
     left: 50%;
   }
 
+  .straight_container {
+    width: 576px;
+    height: 576px;
+  }
+
   .diagonal_container {
-    margin-left: calc(-229px / 2);
-    margin-top: calc(-229px / 2);
+    width: 234px;
+    height: 234px;
+    margin-left: -117px;
+    margin-top: -117px;
   }
 
   .center_container {
-    margin-left: calc(-42px / 2);
-    margin-top: calc(-42px / 2);
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
   }
 `;
 
@@ -37,8 +46,8 @@ export default function Logo() {
         <Image
           src="/images/logo_straight.png"
           alt="logo"
-          width={565}
-          height={565}
+          width={576}
+          height={576}
           priority={true}
         />
       </div>
@@ -46,16 +55,16 @@ export default function Logo() {
         <Image
           src="/images/logo_diagonal.png"
           alt="logo"
-          width={229}
-          height={229}
+          width={234}
+          height={234}
         />
       </div>
       <div className="center_container">
         <Image
           src="/images/logo_center.png"
           alt="logo"
-          width={42}
-          height={42}
+          width={40}
+          height={40}
         />
       </div>
     </div>
