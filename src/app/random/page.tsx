@@ -1,3 +1,7 @@
 'use client';
 
-export default function Random() {}
+import Choice from '@/components/organisms/Choice';
+
+export default function Random() {
+  return <></>;
+}
