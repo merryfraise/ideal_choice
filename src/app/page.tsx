@@ -46,9 +46,12 @@ const mainStyle = css`
       transform: rotate(-90deg);
     }
 
-    .diagonal_container,
-    .center_container {
+    .diagonal_container {
       transform: rotate(90deg);
+    }
+
+    .center_container {
+      transform: rotate(45deg);
     }
   }
 
