@@ -16,7 +16,6 @@ const headerStyle = css`
 
 export default function Header() {
   const router = usePathname();
-  console.log(router);
 
   if (router.includes('/random')) return null;
   return (

@@ -8,6 +8,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const mainStyle = css`
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
