@@ -8,7 +8,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const choiceLayoutStyle = css`
+const randomLayoutStyle = css`
   height: 100vh !important;
   display: flex;
 
@@ -24,15 +24,15 @@ const choiceLayoutStyle = css`
   }
 `;
 
-type ChoiceLayoutProps = {
+type RandomLayoutProps = {
   children: React.ReactNode;
 };
 
-export default function ChoiceLayout({ children }: ChoiceLayoutProps) {
+export default function ChoiceLayout({ children }: RandomLayoutProps) {
   const route = Route();
 
   return (
-    <section css={choiceLayoutStyle}>
+    <section css={randomLayoutStyle}>
       <Choice />
       <article>
         <nav>
