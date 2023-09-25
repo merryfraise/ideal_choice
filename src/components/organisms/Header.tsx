@@ -5,7 +5,7 @@ import { css } from '@emotion/react';
 import Link from 'next/link';
 import Headings from '../atoms/Headings';
 import Navigation from '../molecules/Navigation';
-import { usePathname } from 'next/navigation';
+import Route from '@/utils/Route';
 
 const headerStyle = css`
   display: flex;
@@ -15,9 +15,9 @@ const headerStyle = css`
 `;
 
 export default function Header() {
-  const router = usePathname();
+  const route = Route();
 
-  if (router.includes('/random')) return null;
+  if (route.includes('/random')) return null;
   return (
     <header css={headerStyle}>
       <Link href="/">

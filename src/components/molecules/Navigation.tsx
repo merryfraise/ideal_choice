@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import { css } from '@emotion/react';
-import { usePathname } from 'next/navigation';
+import Route from '@/utils/Route';
 
 const navStyle = css`
   display: flex;
@@ -16,17 +16,17 @@ const navStyle = css`
 `;
 
 export default function Navigation() {
-  const router = usePathname();
+  const route = Route();
 
   return (
     <nav css={navStyle}>
-      <Link href="/intro1" className={router === '/intro1' ? 'active' : ''}>
+      <Link href="/intro1" className={route === '/intro1' ? 'active' : ''}>
         이상적인 소개
       </Link>
-      <Link href="/intro2" className={router === '/intro2' ? 'active' : ''}>
+      <Link href="/intro2" className={route === '/intro2' ? 'active' : ''}>
         이상적인 응답자
       </Link>
-      <Link href="/intro3" className={router === '/intro3' ? 'active' : ''}>
+      <Link href="/intro3" className={route === '/intro3' ? 'active' : ''}>
         이상적인 질문
       </Link>
     </nav>

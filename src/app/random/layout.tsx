@@ -18,7 +18,10 @@ export default function ChoiceLayout({ children }: ChoiceLayoutProps) {
   return (
     <section css={choiceLayoutStyle}>
       <Choice />
-      <article>{children}</article>
+      <article>
+        <nav></nav>
+        {children}
+      </article>
     </section>
   );
 }
