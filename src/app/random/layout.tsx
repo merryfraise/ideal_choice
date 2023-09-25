@@ -6,7 +6,7 @@ import { css } from '@emotion/react';
 import React from 'react';
 
 const choiceLayoutStyle = css`
-  height: 100%;
+  height: 100vh !important;
   display: flex;
 `;
 
