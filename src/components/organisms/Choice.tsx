@@ -4,6 +4,7 @@
 import { css } from '@emotion/react';
 import Link from 'next/link';
 import Headings from '../atoms/Headings';
+import Left from '../molecules/Left';
 
 const choiceStyle = css`
   width: 682px;
@@ -12,6 +13,13 @@ const choiceStyle = css`
 
   header {
     padding: 34px;
+  }
+
+  .logo {
+    height: calc(100% - 116px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -23,7 +31,9 @@ export default function Choice() {
           <Headings heading="h1">아마도 이상적인 선택들</Headings>
         </Link>
       </header>
-      <div style={{ color: 'white' }}>테스트</div>
+      <div className="logo">
+        <Left />
+      </div>
     </aside>
   );
 }
