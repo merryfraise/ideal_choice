@@ -4,11 +4,17 @@
 import Route from '@/utils/Route';
 import { css } from '@emotion/react';
 import Image from 'next/image';
+import { useRef } from 'react';
 
 const leftStyle = css`
   position: relative;
-  width: 360px;
-  height: 360px;
+  width: 394px;
+  height: 394px;
+
+  .logo_container {
+    width: 100%;
+    height: 100%;
+  }
 
   .direction_container,
   .center_container {
@@ -40,10 +46,20 @@ const leftStyle = css`
 
 export default function Left() {
   const route = Route();
+  const logoRef = useRef<HTMLDivElement>(null); // ref of logo container
+  const center = { x: 340, y: 489.5 }; // coordinate of logo container
+
+  window.addEventListener('mousemove', (event) => {
+    const x = center.x - event.clientX;
+    const y = center.y - event.clientY;
+
+    console.log('x: ' + x + ' y: ' + y);
+  });
+
   return (
     <div css={leftStyle}>
       {route.includes('/choice') ? null : (
-        <div className="logo_container">
+        <div className="logo_container" ref={logoRef}>
           <div className="direction_container">
             <Image
               src="/images/left_direction.png"
