@@ -4,7 +4,7 @@
 import Route from '@/utils/Route';
 import { css } from '@emotion/react';
 import Image from 'next/image';
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 const leftStyle = css`
   position: relative;
@@ -49,12 +49,24 @@ export default function Left() {
   const logoRef = useRef<HTMLDivElement>(null); // ref of logo container
   const center = { x: 340, y: 489.5 }; // coordinate of logo container
 
-  window.addEventListener('mousemove', (event) => {
-    const x = center.x - event.clientX;
-    const y = center.y - event.clientY;
+  useEffect(() => {
+    window.addEventListener('mousemove', (event) => {
+      const x = center.x - event.clientX;
+      const y = center.y - event.clientY;
 
-    console.log('x: ' + x + ' y: ' + y);
-  });
+      if (x >= 99 && y >= 99.5) {
+      } else if (x <= -99 && y >= 99.5) {
+      } else if (x <= -99 && y <= -99.5) {
+      } else if (x >= 99 && y <= -99.5) {
+      } else if (y >= 99.5) {
+      } else if (x <= -99) {
+      } else if (y <= -99.5) {
+      } else if (x >= 99) {
+      }
+
+      console.log(x, y);
+    });
+  }, []);
 
   return (
     <div css={leftStyle}>
