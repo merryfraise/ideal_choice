@@ -35,8 +35,7 @@ const chosenStyle = css`
     padding-top: 16px;
   }
 
-  p:not(.table_container):first-of-type,
-  p:not(.table_container):nth-of-type(2) {
+  .strong_container {
     font-weight: var(--semibold-weight);
   }
 
@@ -89,10 +88,12 @@ export default function Chosen({ params }: ChosenPageProps) {
             {data.title}
           </Headings>
           <div className="text_conatiner" key={'text container'}>
-            <Paragraph key={'main text1'}>{data.first1}</Paragraph>
-            {data.first2 ? (
-              <Paragraph key={'main text2'}>{data.first2}</Paragraph>
-            ) : null}
+            <div className="strong_container" key={'strong container'}>
+              <Paragraph key={'main text1'}>{data.first1}</Paragraph>
+              {data.first2 ? (
+                <Paragraph key={'main text2'}>{data.first2}</Paragraph>
+              ) : null}
+            </div>
             <Paragraph key={'main text3'}>{data.p1}</Paragraph>
             {data.p2 ? (
               <Paragraph key={'main text4'}>{data.p2}</Paragraph>
