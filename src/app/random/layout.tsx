@@ -13,6 +13,8 @@ const randomLayoutStyle = css`
   display: flex;
 
   article {
+    background-image: url(/images/intro_bg.jpg);
+    background-size: cover;
     width: calc(100% - 682px);
   }
 
