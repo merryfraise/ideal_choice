@@ -17,7 +17,7 @@ const headerStyle = css`
 export default function Header() {
   const route = Route();
 
-  if (route.includes('/random')) return null;
+  if (route.length >= 2 && !route.includes('/intro')) return null;
   return (
     <header css={headerStyle}>
       <Link href="/">

@@ -34,14 +34,14 @@ export default function Random() {
       <ul className="before">
         {data.choice.map((choice) => (
           <li key={choice.id}>
-            <Link href={`/random/choice/${choice.id}`}>{choice.question}</Link>
+            <Link href={`/${choice.id}`}>{choice.question}</Link>
           </li>
         ))}
       </ul>
       <ul className="after">
         {data.choice.map((choice) => (
           <li key={choice.id}>
-            <Link href={`/random/choice/${choice.id}`}>{choice.question}</Link>
+            <Link href={`/${choice.id}`}>{choice.question}</Link>
           </li>
         ))}
       </ul>
