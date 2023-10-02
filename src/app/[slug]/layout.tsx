@@ -33,19 +33,25 @@ type ChoicedLayoutProps = {
 };
 
 export default function ChoiceLayout({ children }: ChoicedLayoutProps) {
+  const route = Route();
+
   return (
     <section css={choicedLayoutStyle}>
       <Choice />
       <article>
         <nav>
-          <Link href="/random">
-            <Image
-              src="/images/nav_white.png"
-              alt="navigation"
-              width={46}
-              height={46}
-            />
-          </Link>
+          {route.includes('hidden') ? (
+            <></>
+          ) : (
+            <Link href="/random">
+              <Image
+                src="/images/nav_white.png"
+                alt="navigation"
+                width={46}
+                height={46}
+              />
+            </Link>
+          )}
         </nav>
         {children}
       </article>
