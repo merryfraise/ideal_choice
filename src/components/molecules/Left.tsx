@@ -156,7 +156,7 @@ export default function Left() {
 
   return (
     <div css={leftStyle}>
-      {route.includes('/choice') ? null : (
+      {route.includes('random') ? (
         <>
           <div className="logo_container" ref={logoRef}>
             <div className="direction_container">
@@ -200,7 +200,7 @@ export default function Left() {
           </div>
           <div className="text_container" ref={textRef}></div>
         </>
-      )}
+      ) : null}
     </div>
   );
 }
