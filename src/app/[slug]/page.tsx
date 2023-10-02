@@ -120,6 +120,35 @@ export default function Chosen({ params }: ChosenPageProps) {
             {data.p4 ? (
               <Paragraph key={'main text6'}>{data.p4}</Paragraph>
             ) : null}
+            {data.p5 ? (
+              <Paragraph key={'main text7'}>{data.p5}</Paragraph>
+            ) : null}
+            {data.p6 ? (
+              <Paragraph key={'main text8'}>{data.p6}</Paragraph>
+            ) : null}
+            {data.p7 ? (
+              <Paragraph key={'main text9'}>{data.p7}</Paragraph>
+            ) : null}
+            {data.ereason ? (
+              <div className="reason_container" key={'reason container1'}>
+                <Paragraph key={'reason text'}>{data.ereason}</Paragraph>
+                <ul key={'reason list'}>
+                  {data.reason.map((reason, idx) => (
+                    <li key={`reason list${idx}`}>{reason}</li>
+                  ))}
+                </ul>
+                <Paragraph key={'reason text1'}>{data.ep1}</Paragraph>
+                {data.ep2 ? (
+                  <Paragraph key={'reason text2'}>{data.ep2}</Paragraph>
+                ) : null}
+                {data.ep3 ? (
+                  <Paragraph key={'reason text3'}>{data.ep3}</Paragraph>
+                ) : null}
+                {data.ep4 ? (
+                  <Paragraph key={'reason text4'}>{data.ep4}</Paragraph>
+                ) : null}
+              </div>
+            ) : null}
             {data.table ? (
               <div className="table_container" key={'table container'}>
                 <Paragraph key={'table text1'}>{data.before}</Paragraph>
