@@ -3,6 +3,7 @@ import React from 'react';
 type HeadingsProps = {
   heading: string;
   children: React.ReactNode;
+  key?: number;
 };
 
 export default function Headings({ heading, children }: HeadingsProps) {
