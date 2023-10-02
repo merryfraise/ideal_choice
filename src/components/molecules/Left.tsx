@@ -18,20 +18,24 @@ const leftStyle = css`
   }
 
   .direction_container,
-  .center_container {
+  .direction_hover_container,
+  .center_container,
+  .center_hover_container {
     position: absolute;
     left: 50%;
     top: 50%;
   }
 
-  .direction_container {
+  .direction_container,
+  .direction_hover_container {
     width: 360px;
     height: 360px;
     margin-left: -180px;
     margin-top: -180px;
   }
 
-  .center_container {
+  .center_container,
+  .center_hover_container {
     width: 28px;
     height: 28px;
     margin-left: -14px;
@@ -39,7 +43,22 @@ const leftStyle = css`
     transition: transform ease-out 0.3s;
   }
 
+  .direction_hover_container,
+  .center_hover_container {
+    display: none;
+  }
+
   .logo_container:hover {
+    .direction_container,
+    .center_container {
+      display: none;
+    }
+
+    .direction_hover_container,
+    .center_hover_container {
+      display: block;
+    }
+
     img {
       filter: drop-shadow(var(--white-glow));
     }
@@ -155,9 +174,29 @@ export default function Left() {
                 priority={true}
               />
             </div>
-            <div className="center_container" ref={centerRef}>
+            <div className="direction_hover_container">
               <Image
+                src="/images/left_direction_hover.png"
+                alt="logo"
+                width={360}
+                height={360}
+                priority={true}
+              />
+            </div>
+            <div className="center_container">
+              <Image
+                className="center"
                 src="/images/left_center.png"
+                alt="logo"
+                width={28}
+                height={28}
+                priority={true}
+              />
+            </div>
+            <div className="center_hover_container" ref={centerRef}>
+              <Image
+                className="center_hover"
+                src="/images/left_center_hover.png"
                 alt="logo"
                 width={28}
                 height={28}
