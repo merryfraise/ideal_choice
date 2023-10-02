@@ -31,7 +31,14 @@ const RandomStyle = css`
 export default function Random() {
   return (
     <div css={RandomStyle}>
-      <ul>
+      <ul className="before">
+        {data.choice.map((choice) => (
+          <li key={choice.id}>
+            <Link href={`/random/choice/${choice.id}`}>{choice.question}</Link>
+          </li>
+        ))}
+      </ul>
+      <ul className="after">
         {data.choice.map((choice) => (
           <li key={choice.id}>
             <Link href={`/random/choice/${choice.id}`}>{choice.question}</Link>
