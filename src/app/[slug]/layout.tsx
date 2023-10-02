@@ -29,10 +29,13 @@ const choicedLayoutStyle = css`
 `;
 
 type ChoicedLayoutProps = {
+  params: {
+    slug: string;
+  };
   children: React.ReactNode;
 };
 
-export default function ChoiceLayout({ children }: ChoicedLayoutProps) {
+export default function ChoiceLayout({ params, children }: ChoicedLayoutProps) {
   const route = Route();
 
   return (
@@ -41,9 +44,16 @@ export default function ChoiceLayout({ children }: ChoicedLayoutProps) {
       <article>
         <nav>
           {route.includes('hidden') ? (
-            <></>
+            <Link href={`/${params.slug}`}>
+              <Image
+                src="/images/nav_purewhite.png"
+                alt="navigation"
+                width={46}
+                height={46}
+              />
+            </Link>
           ) : (
-            <Link href="/random">
+            <Link href={`/${params.slug}/hidden`}>
               <Image
                 src="/images/nav_white.png"
                 alt="navigation"
