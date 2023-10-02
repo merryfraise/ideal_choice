@@ -35,8 +35,8 @@ const chosenStyle = css`
     padding-top: 16px;
   }
 
-  p:first-of-type,
-  p:nth-of-type(2) {
+  p:not(.table_container):first-of-type,
+  p:not(.table_container):nth-of-type(2) {
     font-weight: var(--semibold-weight);
   }
 
