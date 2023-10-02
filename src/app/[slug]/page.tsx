@@ -7,7 +7,7 @@ import Link from 'next/link';
 import Headings from '@/components/atoms/Headings';
 import Paragraph from '@/components/atoms/Paragraph';
 
-const choicedStyle = css`
+const chosenStyle = css`
   height: calc(100% - 116px);
   padding: 34px 164px 116px 164px;
   overflow-y: scroll;
@@ -40,20 +40,20 @@ const choicedStyle = css`
   }
 `;
 
-type ChoicedPageProps = {
+type ChosenPageProps = {
   params: {
     slug: string;
   };
 };
 
-export default function Choiced({ params }: ChoicedPageProps) {
-  const choicedData = data.choice.filter(
+export default function Chosen({ params }: ChosenPageProps) {
+  const chosenData = data.choice.filter(
     (choice) => choice.id.toString() === params.slug
   );
 
   return (
-    <div css={choicedStyle}>
-      {choicedData.map((data) => (
+    <div css={chosenStyle}>
+      {chosenData.map((data) => (
         <>
           <Link href={`/${data.id}/hidden`} key={1}>
             {data.chapter}
