@@ -36,11 +36,10 @@ const leftStyle = css`
 
   .center_container,
   .center_hover_container {
-    width: 28px;
-    height: 28px;
-    margin-left: -14px;
-    margin-top: -14px;
-    transition: transform ease-out 0.3s;
+    width: 32px;
+    height: 32px;
+    margin-left: -16px;
+    margin-top: -16px;
   }
 
   .direction_hover_container,
@@ -101,58 +100,53 @@ export default function Left() {
 
         // Outside
         if (x <= -286 || x >= 286 || y <= -286.5 || y >= 286.5) {
-          centerCurrent.style.cssText = 'margin-left: -14px; margin-top: -14px';
           textCurrent.innerText = '';
         }
         // North West
         else if (x >= 69 && y >= 69.5) {
           centerCurrent.style.cssText =
-            'margin-left: -164px; margin-top: -164px; transform: rotate(45deg);';
+            'margin-left: -164px; margin-top: -164px;';
           textCurrent.innerText = '선택의 결과는 책임지지 않습니다.';
         }
         // North East
         else if (x <= -69 && y >= 69.5) {
           centerCurrent.style.cssText =
-            'margin-left: 136px; margin-top: -164px; transform: rotate(45deg);';
+            'margin-left: 136px; margin-top: -164px;';
           textCurrent.innerText = '현재까지 총 100개의 선택이 완료되었습니다.';
         }
         // South East
         else if (x <= -69 && y <= -69.5) {
           centerCurrent.style.cssText =
-            'margin-left: 136px; margin-top: 136px; transform: rotate(45deg);';
+            'margin-left: 136px; margin-top: 136px;';
           textCurrent.innerText = '...';
         }
         // South West
         else if (x >= 69 && y <= -69.5) {
           centerCurrent.style.cssText =
-            'margin-left: -164px; margin-top: 136px; transform: rotate(45deg);';
+            'margin-left: -164px; margin-top: 136px;';
           textCurrent.innerText =
             '이상적인 선택을 통해 부디 깨달음을 얻길 바랍니다.';
         }
         // North
         else if (y >= 99.5) {
-          centerCurrent.style.cssText =
-            'margin-top: -228px; transform: rotate(45deg);';
+          centerCurrent.style.cssText = 'margin-top: -228px;';
           textCurrent.innerText =
             '이상을 가리키는 나침반을 통해 선택의 고통에서 벗어나세요.';
         }
         // East
         else if (x <= -99) {
-          centerCurrent.style.cssText =
-            'margin-left: 200px; transform: rotate(45deg);';
+          centerCurrent.style.cssText = 'margin-left: 200px;';
           textCurrent.innerText =
             '간혹 선택이 바뀌는 경우가 있으니 유의하시기 바랍니다.';
         }
         // South
         else if (y <= -99.5) {
-          centerCurrent.style.cssText =
-            'margin-top: 200px; transform: rotate(45deg);';
+          centerCurrent.style.cssText = 'margin-top: 200px;';
           textCurrent.innerText = '쉬운 선택은 옳은 선택이 될 수 없습니다.';
         }
         // West
         else if (x >= 99) {
-          centerCurrent.style.cssText =
-            'margin-left: -228px; transform: rotate(45deg);';
+          centerCurrent.style.cssText = 'margin-left: -228px;';
           textCurrent.innerText =
             '새로 추가되는 선택은 간헐적으로 업데이트됩니다.';
         }
@@ -188,8 +182,8 @@ export default function Left() {
                 className="center"
                 src="/images/left_center.png"
                 alt="logo"
-                width={28}
-                height={28}
+                width={32}
+                height={32}
                 priority={true}
               />
             </div>
@@ -198,8 +192,8 @@ export default function Left() {
                 className="center_hover"
                 src="/images/left_center_hover.png"
                 alt="logo"
-                width={28}
-                height={28}
+                width={32}
+                height={32}
                 priority={true}
               />
             </div>
