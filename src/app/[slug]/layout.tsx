@@ -13,6 +13,8 @@ const choicedLayoutStyle = css`
   display: flex;
 
   article {
+    background-image: url(/images/intro_bg.jpg);
+    background-size: contain;
     width: calc(100% - 682px);
   }
 
@@ -53,7 +55,7 @@ export default function ChoiceLayout({ params, children }: ChoicedLayoutProps) {
               />
             </Link>
           ) : (
-            <Link href={`/${params.slug}/hidden`}>
+            <Link href="/random">
               <Image
                 src="/images/nav_white.png"
                 alt="navigation"
