@@ -84,3 +84,7 @@ p {
   font-size: var(--small-font);
   line-height: 1.6;
 }
+
+li {
+  font-size: var(--small-font);
+}
