@@ -22,6 +22,7 @@ const chosenStyle = css`
 
   h1,
   p,
+  li,
   table {
     color: var(--white);
   }
@@ -31,12 +32,17 @@ const chosenStyle = css`
     text-shadow: var(--white-glow);
   }
 
-  p:not(:nth-of-type(2)) {
+  p:not(:nth-of-type(2)),
+  ul {
     padding-top: 16px;
   }
 
   .strong_container {
     font-weight: var(--semibold-weight);
+  }
+
+  li {
+    padding-top: 4px;
   }
 
   table {
@@ -94,6 +100,16 @@ export default function Chosen({ params }: ChosenPageProps) {
                 <Paragraph key={'main text2'}>{data.first2}</Paragraph>
               ) : null}
             </div>
+            {data.freason ? (
+              <div className="reason_container" key={'reason container1'}>
+                <Paragraph key={'reason text'}>{data.freason}</Paragraph>
+                <ul key={'reason list'}>
+                  {data.reason.map((reason, idx) => (
+                    <li key={`reason list${idx}`}>{reason}</li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
             <Paragraph key={'main text3'}>{data.p1}</Paragraph>
             {data.p2 ? (
               <Paragraph key={'main text4'}>{data.p2}</Paragraph>
