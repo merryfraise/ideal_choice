@@ -65,7 +65,7 @@ export default function Home() {
   return (
     <section css={mainStyle}>
       <Image
-        src="/images/main_bg.png"
+        src="/images/main_bg.jpg"
         alt="background image"
         fill
         priority={true}

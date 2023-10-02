@@ -9,7 +9,7 @@ export default function IntroTwo() {
   return (
     <article css={introStyle}>
       <Image
-        src="images/intro_bg.png"
+        src="images/intro_bg.jpg"
         alt="background image"
         fill
         priority={true}
