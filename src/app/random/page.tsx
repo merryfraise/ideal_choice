@@ -12,6 +12,10 @@ const RandomStyle = css`
     align-items: center;
   }
 
+  li {
+    padding: 12px;
+  }
+
   a {
     color: var(--white);
     font-size: 46px;
