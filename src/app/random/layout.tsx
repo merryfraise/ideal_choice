@@ -19,10 +19,11 @@ const randomLayoutStyle = css`
   }
 
   nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 34px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 34px;
+    margin-top: 34px;
   }
 `;
 

@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 const RandomStyle = css`
-  height: calc(100% - 116px);
+  height: 100%;
   overflow: hidden;
 
   li {

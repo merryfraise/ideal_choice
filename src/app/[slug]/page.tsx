@@ -8,8 +8,8 @@ import Headings from '@/components/atoms/Headings';
 import Paragraph from '@/components/atoms/Paragraph';
 
 const chosenStyle = css`
-  height: calc(100% - 116px);
-  padding: 34px 164px 116px 164px;
+  height: 100%;
+  padding: 150px 164px 116px 164px;
   overflow-y: scroll;
 
   ::-webkit-scrollbar {
