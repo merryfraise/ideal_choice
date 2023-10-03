@@ -36,7 +36,7 @@ type RandomLayoutProps = {
   children: React.ReactNode;
 };
 
-export default function ChoiceLayout({ children }: RandomLayoutProps) {
+export default function RandomLayout({ children }: RandomLayoutProps) {
   const route = Route();
 
   return (
