@@ -35,7 +35,7 @@ type SortLayoutProps = {
   children: React.ReactNode;
 };
 
-export default function RortLayout({ children }: SortLayoutProps) {
+export default function SortLayout({ children }: SortLayoutProps) {
   return (
     <section css={sortLayoutStyle}>
       <Choice />
