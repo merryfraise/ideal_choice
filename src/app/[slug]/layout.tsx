@@ -97,6 +97,11 @@ const chosenLayoutStyle = css`
     width: calc(100% - 682px);
   }
 
+  article.hidden {
+    background-image: none;
+    background-color: var(--violet1);
+  }
+
   nav {
     position: absolute;
     right: 0;
@@ -116,8 +121,8 @@ type ChosenLayoutProps = {
 export default function ChosenLayout({ params, children }: ChosenLayoutProps) {
   const route = Route();
 
-  const chosenData = data.choice.filter(
-    (choice) => choice.id.toString() === params.slug
+  const chosenData = data.choice.filter((choice) =>
+    params.slug.includes(choice.id.toString())
   );
 
   return (
@@ -208,7 +213,7 @@ export default function ChosenLayout({ params, children }: ChosenLayoutProps) {
           </div>
         </div>
       </aside>
-      <article>
+      <article className={route.includes('hidden') ? 'hidden' : ''}>
         <nav>
           {route.includes('hidden') ? (
             <Link href={`/${params.slug}`}>
@@ -220,7 +225,7 @@ export default function ChosenLayout({ params, children }: ChosenLayoutProps) {
               />
             </Link>
           ) : (
-            <Link href="/random">
+            <Link href={'/random'}>
               <Image
                 src="/images/nav_white.png"
                 alt="navigation"
