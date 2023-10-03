@@ -25,6 +25,11 @@ const randomLayoutStyle = css`
     margin-right: 34px;
     margin-top: 34px;
   }
+
+  a {
+    position: relative;
+    z-index: 10;
+  }
 `;
 
 type RandomLayoutProps = {
