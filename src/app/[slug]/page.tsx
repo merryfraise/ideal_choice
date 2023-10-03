@@ -33,13 +33,17 @@ const chosenStyle = css`
     text-shadow: var(--white-glow);
   }
 
-  p:not(:nth-of-type(2)),
+  p,
   ul {
     padding-top: 16px;
   }
 
   .strong_container {
     font-weight: var(--semibold-weight);
+
+    p:not(:nth-of-type(2)) {
+      padding-top: 16px;
+    }
   }
 
   li {

@@ -216,7 +216,7 @@ export default function ChosenLayout({ params, children }: ChosenLayoutProps) {
       <article className={route.includes('hidden') ? 'hidden' : ''}>
         <nav>
           {route.includes('hidden') ? (
-            <Link href={`/${params.slug}`}>
+            <Link href={`/random`}>
               <Image
                 src="/images/nav_purewhite.png"
                 alt="navigation"
@@ -225,7 +225,7 @@ export default function ChosenLayout({ params, children }: ChosenLayoutProps) {
               />
             </Link>
           ) : (
-            <Link href={'/random'}>
+            <Link href={'/${params.slug}'}>
               <Image
                 src="/images/nav_white.png"
                 alt="navigation"
