@@ -10,7 +10,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const choicedLayoutStyle = css`
+const chosenLayoutStyle = css`
   height: 100vh !important;
   display: flex;
 
@@ -106,14 +106,14 @@ const choicedLayoutStyle = css`
   }
 `;
 
-type ChoicedLayoutProps = {
+type ChosenLayoutProps = {
   params: {
     slug: string;
   };
   children: React.ReactNode;
 };
 
-export default function ChoiceLayout({ params, children }: ChoicedLayoutProps) {
+export default function ChosenLayout({ params, children }: ChosenLayoutProps) {
   const route = Route();
 
   const chosenData = data.choice.filter(
@@ -121,7 +121,7 @@ export default function ChoiceLayout({ params, children }: ChoicedLayoutProps) {
   );
 
   return (
-    <section css={choicedLayoutStyle}>
+    <section css={chosenLayoutStyle}>
       <aside>
         <header>
           <Link href="/">
