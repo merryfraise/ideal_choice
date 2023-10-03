@@ -168,7 +168,7 @@ export default function Left() {
 
   return (
     <div css={leftStyle}>
-      {route.includes('random') ? (
+      {route.includes('random') || route.includes('sort') ? (
         <>
           <div className="logo_container" ref={logoRef}>
             <div className="direction_container">
