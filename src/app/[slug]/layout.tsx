@@ -120,9 +120,12 @@ type ChosenLayoutProps = {
 
 export default function ChosenLayout({ params, children }: ChosenLayoutProps) {
   const route = Route();
+  const paramsSlug = params.slug.includes('hidden')
+    ? params.slug.slice(6)
+    : params.slug;
 
-  const chosenData = data.choice.filter((choice) =>
-    params.slug.includes(choice.id.toString())
+  const chosenData = data.choice.filter(
+    (choice) => choice.id.toString() === paramsSlug
   );
 
   return (
