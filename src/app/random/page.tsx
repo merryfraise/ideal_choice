@@ -38,13 +38,11 @@ const RandomStyle = css`
     font-size: 46px;
     font-weight: var(--semibold-weight);
     transition: transform ease-out 0.5s;
-    transform: scale(1);
   }
 
   a:hover {
     font-size: 48px;
     text-shadow: var(--white-glow);
-    transform: scale(1.2);
   }
 
   @keyframes infiniteBefore {
