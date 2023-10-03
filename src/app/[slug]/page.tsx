@@ -7,6 +7,7 @@ import Link from 'next/link';
 import Headings from '@/components/atoms/Headings';
 import Paragraph from '@/components/atoms/Paragraph';
 import Route from '@/utils/Route';
+import Text from '@/components/atoms/Text';
 
 const chosenStyle = css`
   height: 100%;
@@ -77,6 +78,41 @@ const chosenStyle = css`
   }
 `;
 
+const hiddenStyle = css`
+  font-family: 'Pretendard';
+
+  height: 100%;
+  padding: 150px 164px 116px 164px;
+  overflow-y: scroll;
+  color: var(--white);
+  font-size: var(--small-font);
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  p {
+    line-height: 1.2;
+  }
+
+  p,
+  .reason_container {
+    padding-top: 16px;
+  }
+
+  .question_container {
+    margin-top: 64px;
+    color: var(--black);
+    font-weight: var(--semibold-weight);
+  }
+
+  .reason_container {
+    li {
+      margin-top: 8px;
+    }
+  }
+`;
+
 type ChosenPageProps = {
   params: {
     slug: string;
@@ -85,15 +121,90 @@ type ChosenPageProps = {
 
 export default function Chosen({ params }: ChosenPageProps) {
   const route = Route();
+  const paramsSlug = params.slug.includes('hidden')
+    ? params.slug.slice(6)
+    : params.slug;
 
   const chosenData = data.choice.filter(
-    (choice) => choice.id.toString() === params.slug
+    (choice) => choice.id.toString() === paramsSlug
+  );
+
+  const hiddenData = data.hidden.filter(
+    (hidden) => hidden.id.toString() === paramsSlug
   );
 
   return (
     <>
       {route.includes('hidden') ? (
-        <></>
+        <div css={hiddenStyle}>
+          {hiddenData.map((data) => (
+            <div key={'article'}>
+              <Text>질문 횟수 : {data.number}</Text>
+              <div className="text_container">
+                <div className="question_container">
+                  <Text>{data.q1}</Text>
+                </div>
+                <div className="answer_container">
+                  <Paragraph>{data.fp1}</Paragraph>
+                  {data.adv1 ? (
+                    <div className="reason_container">
+                      <Text>{data.adv1}</Text>
+                      <ul>
+                        {data.adreason1.map((reason, idx) => (
+                          <li key={`reason${idx}`}>{reason}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : null}
+                  {data.dadv1 ? (
+                    <div className="reason_container">
+                      <Text>{data.dadv1}</Text>
+                      <ul>
+                        {data.dadreason1.map((reason, idx) => (
+                          <li key={`reason${idx}`}>{reason}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : null}
+                  {data.adv2 ? (
+                    <div className="reason_container">
+                      <Text>{data.adv2}</Text>
+                      <ul>
+                        {data.adreason2.map((reason, idx) => (
+                          <li key={`reason${idx}`}>{reason}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : null}
+                  {data.dadv2 ? (
+                    <div className="reason_container">
+                      <Text>{data.dadv2}</Text>
+                      <ul>
+                        {data.dadreason2.map((reason, idx) => (
+                          <li key={`reason${idx}`}>{reason}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : null}
+                  <Paragraph>{data.result}</Paragraph>
+                </div>
+                {data.q2 ? (
+                  <>
+                    <div className="question_container">
+                      <Text>{data.q2}</Text>
+                    </div>
+                    <div className="answer_container">
+                      <Paragraph>{data.sp1}</Paragraph>
+                      {data.sp2 ? <Paragraph>{data.sp2}</Paragraph> : null}
+                      {data.sp3 ? <Paragraph>{data.sp3}</Paragraph> : null}
+                      {data.sp4 ? <Paragraph>{data.sp4}</Paragraph> : null}
+                    </div>
+                  </>
+                ) : null}
+              </div>
+            </div>
+          ))}
+        </div>
       ) : (
         <div css={chosenStyle}>
           {chosenData.map((data) => (
