@@ -71,6 +71,10 @@ const leftStyle = css`
     text-shadow: var(--white-glow);
     text-align: center;
   }
+
+  .special {
+    color: var(--violet2);
+  }
 `;
 
 export default function Left() {
@@ -106,47 +110,55 @@ export default function Left() {
         else if (x >= 69 && y >= 69.5) {
           centerCurrent.style.cssText =
             'margin-left: -164px; margin-top: -164px;';
+          textCurrent.classList.remove('special');
           textCurrent.innerText = '선택의 결과는 책임지지 않습니다.';
         }
         // North East
         else if (x <= -69 && y >= 69.5) {
           centerCurrent.style.cssText =
             'margin-left: 136px; margin-top: -164px;';
+          textCurrent.classList.remove('special');
           textCurrent.innerText = '현재까지 총 100개의 선택이 완료되었습니다.';
         }
         // South East
         else if (x <= -69 && y <= -69.5) {
           centerCurrent.style.cssText =
             'margin-left: 136px; margin-top: 136px;';
+          textCurrent.classList.remove('special');
           textCurrent.innerText = '...';
         }
         // South West
         else if (x >= 69 && y <= -69.5) {
           centerCurrent.style.cssText =
             'margin-left: -164px; margin-top: 136px;';
+          textCurrent.classList.remove('special');
           textCurrent.innerText =
             '이상적인 선택을 통해 부디 깨달음을 얻길 바랍니다.';
         }
         // North
         else if (y >= 99.5) {
           centerCurrent.style.cssText = 'margin-top: -228px;';
+          textCurrent.classList.remove('special');
           textCurrent.innerText =
             '이상을 가리키는 나침반을 통해 선택의 고통에서 벗어나세요.';
         }
         // East
         else if (x <= -99) {
           centerCurrent.style.cssText = 'margin-left: 200px;';
+          textCurrent.classList.remove('special');
           textCurrent.innerText =
             '간혹 선택이 바뀌는 경우가 있으니 유의하시기 바랍니다.';
         }
         // South
         else if (y <= -99.5) {
           centerCurrent.style.cssText = 'margin-top: 200px;';
+          textCurrent.classList.add('special');
           textCurrent.innerText = '쉬운 선택은 옳은 선택이 될 수 없습니다.';
         }
         // West
         else if (x >= 99) {
           centerCurrent.style.cssText = 'margin-left: -228px;';
+          textCurrent.classList.remove('special');
           textCurrent.innerText =
             '새로 추가되는 선택은 간헐적으로 업데이트됩니다.';
         }
