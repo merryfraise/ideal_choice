@@ -41,9 +41,9 @@ export default function RandomLayout({ children }: RandomLayoutProps) {
       <Choice />
       <article>
         <nav>
-          <Link href="/random">
+          <Link href="/sort">
             <Image
-              src="/images/nav_violet.png"
+              src="/images/nav_white.png"
               alt="navigation"
               width={46}
               height={46}
