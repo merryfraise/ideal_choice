@@ -31,6 +31,8 @@ const chosenStyle = css`
 
   h1 {
     padding-top: 16px;
+    font-size: 44px;
+    line-height: 60px;
     text-shadow: var(--white-glow);
   }
 
@@ -43,7 +45,7 @@ const chosenStyle = css`
     font-weight: var(--semibold-weight);
 
     p:not(:nth-of-type(2)) {
-      padding-top: 16px;
+      padding-top: 32px;
     }
   }
 
