@@ -100,13 +100,18 @@ const hiddenStyle = css`
     padding-top: 16px;
   }
 
-  .question_container {
+  .question_container,
+  .addition_container {
     margin-top: 64px;
     color: var(--black);
     font-weight: var(--semibold-weight);
   }
 
   .reason_container {
+    ul:not(:first-of-type) {
+      padding-top: 16px;
+    }
+
     li {
       margin-top: 8px;
     }
@@ -140,68 +145,79 @@ export default function Chosen({ params }: ChosenPageProps) {
           {hiddenData.map((data) => (
             <div key={'article'}>
               <Text>질문 횟수 : {data.number}</Text>
-              <div className="text_container">
-                <div className="question_container">
-                  <Text>{data.q1}</Text>
+              {data.question1 ? (
+                <div className="text_container">
+                  <div className="question_container">
+                    <Text>{data.question1.question}</Text>
+                  </div>
+                  <div className="answer_container">
+                    {data.question1.answer.map((answer, idx) => (
+                      <Paragraph key={`answer${idx}`}>{answer}</Paragraph>
+                    ))}
+                    {data.question1.comparison ? (
+                      <div className="reason_container">
+                        {data.question1.comparison.advantage1 ? (
+                          <ul>
+                            {data.question1.comparison.advantage1.map(
+                              (advantage, idx) => (
+                                <li key={`advantage1-${idx}`}>{advantage}</li>
+                              )
+                            )}
+                          </ul>
+                        ) : null}
+                        {data.question1.comparison.disadvantage1 ? (
+                          <ul>
+                            {data.question1.comparison.disadvantage1.map(
+                              (disadvantage, idx) => (
+                                <li key={`disadvantage1-${idx}`}>
+                                  {disadvantage}
+                                </li>
+                              )
+                            )}
+                          </ul>
+                        ) : null}
+                        {data.question1.comparison.advantage2 ? (
+                          <ul>
+                            {data.question1.comparison.advantage2.map(
+                              (advantage, idx) => (
+                                <li key={`advantage2-${idx}`}>{advantage}</li>
+                              )
+                            )}
+                          </ul>
+                        ) : null}
+                        {data.question1.comparison.disadvantage2 ? (
+                          <ul>
+                            {data.question1.comparison.disadvantage2.map(
+                              (disadvantage, idx) => (
+                                <li key={`disadvantage2-${idx}`}>
+                                  {disadvantage}
+                                </li>
+                              )
+                            )}
+                          </ul>
+                        ) : null}
+                      </div>
+                    ) : null}
+                    {data.question1.result.map((result, idx) => (
+                      <Paragraph key={`result${idx}`}>{result}</Paragraph>
+                    ))}
+                  </div>
                 </div>
-                <div className="answer_container">
-                  <Paragraph>{data.fp1}</Paragraph>
-                  {data.adv1 ? (
-                    <div className="reason_container">
-                      <Text>{data.adv1}</Text>
-                      <ul>
-                        {data.adreason1.map((reason, idx) => (
-                          <li key={`reason${idx}`}>{reason}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  ) : null}
-                  {data.dadv1 ? (
-                    <div className="reason_container">
-                      <Text>{data.dadv1}</Text>
-                      <ul>
-                        {data.dadreason1.map((reason, idx) => (
-                          <li key={`reason${idx}`}>{reason}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  ) : null}
-                  {data.adv2 ? (
-                    <div className="reason_container">
-                      <Text>{data.adv2}</Text>
-                      <ul>
-                        {data.adreason2.map((reason, idx) => (
-                          <li key={`reason${idx}`}>{reason}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  ) : null}
-                  {data.dadv2 ? (
-                    <div className="reason_container">
-                      <Text>{data.dadv2}</Text>
-                      <ul>
-                        {data.dadreason2.map((reason, idx) => (
-                          <li key={`reason${idx}`}>{reason}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  ) : null}
-                  <Paragraph>{data.result}</Paragraph>
+              ) : null}
+              {data.addition1 ? (
+                <div className="text_container">
+                  <div className="addition_container">
+                    <Text>{data.addition1.addition}</Text>
+                  </div>
+                  <div className="inform_container">
+                    {data.addition1.information.map((information, idx) => (
+                      <Paragraph key={`information${idx}`}>
+                        {information}
+                      </Paragraph>
+                    ))}
+                  </div>
                 </div>
-                {data.q2 ? (
-                  <>
-                    <div className="question_container">
-                      <Text>{data.q2}</Text>
-                    </div>
-                    <div className="answer_container">
-                      <Paragraph>{data.sp1}</Paragraph>
-                      {data.sp2 ? <Paragraph>{data.sp2}</Paragraph> : null}
-                      {data.sp3 ? <Paragraph>{data.sp3}</Paragraph> : null}
-                      {data.sp4 ? <Paragraph>{data.sp4}</Paragraph> : null}
-                    </div>
-                  </>
-                ) : null}
-              </div>
+              ) : null}
             </div>
           ))}
         </div>
