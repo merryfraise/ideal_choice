@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const logoStyle = css`
   position: relative;
-  margin: 40px;
+  margin: 0 40px 40px 40px;
 
   img {
     filter: drop-shadow(var(--violet-glow50));
