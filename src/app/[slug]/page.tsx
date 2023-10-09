@@ -154,7 +154,7 @@ export default function Chosen({ params }: ChosenPageProps) {
                   </div>
                   <div className="answer_container">
                     {data.question1.answer.map((answer, idx) => (
-                      <Paragraph key={`answer${idx}`}>{answer}</Paragraph>
+                      <Paragraph key={`answer1-${idx}`}>{answer}</Paragraph>
                     ))}
                     {data.question1.comparison ? (
                       <div className="reason_container">
@@ -201,8 +201,25 @@ export default function Chosen({ params }: ChosenPageProps) {
                       </div>
                     ) : null}
                     {data.question1.result.map((result, idx) => (
-                      <Paragraph key={`result${idx}`}>{result}</Paragraph>
+                      <Paragraph key={`result1-${idx}`}>{result}</Paragraph>
                     ))}
+                  </div>
+                </div>
+              ) : null}
+              {data.question2 ? (
+                <div className="text_container">
+                  <div className="question_container">
+                    <Text>{data.question2.question}</Text>
+                  </div>
+                  <div className="answer_container">
+                    {data.question2.answer.map((answer, idx) => (
+                      <Paragraph key={`answer2-${idx}`}>{answer}</Paragraph>
+                    ))}
+                    {data.question2.result
+                      ? data.question2.result.map((result, idx) => (
+                          <Paragraph key={`result2-${idx}`}>{result}</Paragraph>
+                        ))
+                      : null}
                   </div>
                 </div>
               ) : null}
