@@ -118,6 +118,28 @@ const hiddenStyle = css`
       margin-top: 8px;
     }
   }
+
+  table {
+    width: 100%;
+    margin: 34px 0;
+    border: 1px solid var(--black);
+    border-collapse: collapse;
+    font-size: var(--small-font);
+  }
+
+  th,
+  td {
+    padding: 10px;
+    border: 0.5px solid var(--black);
+  }
+
+  th {
+    text-align: left;
+  }
+
+  .table_column {
+    color: var(--black);
+  }
 `;
 
 type ChosenPageProps = {
@@ -230,10 +252,67 @@ export default function Chosen({ params }: ChosenPageProps) {
                   </div>
                   <div className="inform_container">
                     {data.addition1.information.map((information, idx) => (
-                      <Paragraph key={`information${idx}`}>
+                      <Paragraph key={`information1-${idx}`}>
                         {information}
                       </Paragraph>
                     ))}
+                  </div>
+                </div>
+              ) : null}
+              {data.addition2 ? (
+                <div className="text_container">
+                  <div className="addition_container">
+                    <Text>{data.addition2.addition}</Text>
+                  </div>
+                  <div className="inform_container">
+                    {data.addition2.information.map((information, idx) => (
+                      <Paragraph key={`information2-${idx}`}>
+                        {information}
+                      </Paragraph>
+                    ))}
+                  </div>
+                  <div className="table_container">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th className="table_column">
+                            {data.addition2.table.thead1}
+                          </th>
+                          <th>{data.addition2.table.thead2}</th>
+                          <th>{data.addition2.table.thead3}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td className="table_column">
+                            {data.addition2.table.tbody1}
+                          </td>
+                          <td>{data.addition2.table.tbody2}</td>
+                          <td>{data.addition2.table.tbody3}</td>
+                        </tr>
+                        <tr>
+                          <td className="table_column">
+                            {data.addition2.table.tbody4}
+                          </td>
+                          <td>{data.addition2.table.tbody5}</td>
+                          <td>{data.addition2.table.tbody6}</td>
+                        </tr>
+                        <tr>
+                          <td className="table_column">
+                            {data.addition2.table.tbody7}
+                          </td>
+                          <td>{data.addition2.table.tbody8}</td>
+                          <td>{data.addition2.table.tbody9}</td>
+                        </tr>
+                        <tr>
+                          <td className="table_column">
+                            {data.addition2.table.tbody10}
+                          </td>
+                          <td>{data.addition2.table.tbody11}</td>
+                          <td>{data.addition2.table.tbody12}</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               ) : null}
