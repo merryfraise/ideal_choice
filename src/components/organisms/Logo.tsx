@@ -20,15 +20,15 @@ const logoStyle = css`
   }
 
   .straight_container {
-    width: 576px;
-    height: 576px;
+    width: 490px;
+    height: 490px;
   }
 
   .diagonal_container {
-    width: 234px;
-    height: 234px;
-    margin-left: -117px;
-    margin-top: -117px;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
   }
 
   .center_container {
@@ -46,8 +46,8 @@ export default function Logo() {
         <Image
           src="/images/logo_straight.png"
           alt="logo"
-          width={576}
-          height={576}
+          width={490}
+          height={490}
           priority={true}
         />
       </div>
@@ -55,8 +55,8 @@ export default function Logo() {
         <Image
           src="/images/logo_diagonal.png"
           alt="logo"
-          width={234}
-          height={234}
+          width={200}
+          height={200}
         />
       </div>
       <div className="center_container">
