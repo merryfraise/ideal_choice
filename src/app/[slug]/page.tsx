@@ -93,12 +93,14 @@ const hiddenStyle = css`
     display: none;
   }
 
-  p {
+  p,
+  li {
     line-height: 1.2;
   }
 
   p,
-  .reason_container {
+  .reason_container,
+  .list_container {
     padding-top: 16px;
   }
 
@@ -109,14 +111,15 @@ const hiddenStyle = css`
     font-weight: var(--semibold-weight);
   }
 
-  .reason_container {
+  .reason_container,
+  .list_container {
     ul:not(:first-of-type) {
       padding-top: 16px;
     }
+  }
 
-    li {
-      margin-top: 8px;
-    }
+  li {
+    margin-top: 8px;
   }
 
   table {
@@ -222,9 +225,90 @@ export default function Chosen({ params }: ChosenPageProps) {
                         ) : null}
                       </div>
                     ) : null}
-                    {data.question1.result.map((result, idx) => (
-                      <Paragraph key={`result1-${idx}`}>{result}</Paragraph>
-                    ))}
+                    {data.question1.result
+                      ? data.question1.result.map((result, idx) => (
+                          <Paragraph key={`result1-${idx}`}>{result}</Paragraph>
+                        ))
+                      : null}
+                    {data.question1.table ? (
+                      <div className="table_container">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th className="table_column">
+                                {data.question1.table.thead1}
+                              </th>
+                              <th>{data.question1.table.thead2}</th>
+                              <th>{data.question1.table.thead3}</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td className="table_column">
+                                {data.question1.table.tbody1}
+                              </td>
+                              <td>{data.question1.table.tbody2}</td>
+                              <td>{data.question1.table.tbody3}</td>
+                            </tr>
+                            <tr>
+                              <td className="table_column">
+                                {data.question1.table.tbody4}
+                              </td>
+                              <td>{data.question1.table.tbody5}</td>
+                              <td>{data.question1.table.tbody6}</td>
+                            </tr>
+                            <tr>
+                              <td className="table_column">
+                                {data.question1.table.tbody7}
+                              </td>
+                              <td>{data.question1.table.tbody8}</td>
+                              <td>{data.question1.table.tbody9}</td>
+                            </tr>
+                            <tr>
+                              <td className="table_column">
+                                {data.question1.table.tbody10}
+                              </td>
+                              <td>{data.question1.table.tbody11}</td>
+                              <td>{data.question1.table.tbody12}</td>
+                            </tr>
+                            {data.question1.table.tbody13 ? (
+                              <tr>
+                                <td className="table_column">
+                                  {data.question1.table.tbody13}
+                                </td>
+                                <td>{data.question1.table.tbody14}</td>
+                                <td>{data.question1.table.tbody15}</td>
+                              </tr>
+                            ) : null}
+                            {data.question1.table.tbody16 ? (
+                              <tr>
+                                <td className="table_column">
+                                  {data.question1.table.tbody16}
+                                </td>
+                                <td>{data.question1.table.tbody17}</td>
+                                <td>{data.question1.table.tbody18}</td>
+                              </tr>
+                            ) : null}
+                          </tbody>
+                        </table>
+                      </div>
+                    ) : null}
+                    {data.question1.information
+                      ? data.question1.information.map((information, idx) => (
+                          <Paragraph key={`additional inforation1-${idx}`}>
+                            {information}
+                          </Paragraph>
+                        ))
+                      : null}
+                    {data.question1.list ? (
+                      <div className="list_container">
+                        <ul>
+                          {data.question1.list.map((list, idx) => (
+                            <li key={`list1-${idx}`}>{list}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : null}
                   </div>
                 </div>
               ) : null}
@@ -237,11 +321,104 @@ export default function Chosen({ params }: ChosenPageProps) {
                     {data.question2.answer.map((answer, idx) => (
                       <Paragraph key={`answer2-${idx}`}>{answer}</Paragraph>
                     ))}
+                    {data.question2.table ? (
+                      <div className="table_container">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th className="table_column">
+                                {data.question2.table.thead1}
+                              </th>
+                              <th>{data.question2.table.thead2}</th>
+                              <th>{data.question2.table.thead3}</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td className="table_column">
+                                {data.question2.table.tbody1}
+                              </td>
+                              <td>{data.question2.table.tbody2}</td>
+                              <td>{data.question2.table.tbody3}</td>
+                            </tr>
+                            <tr>
+                              <td className="table_column">
+                                {data.question2.table.tbody4}
+                              </td>
+                              <td>{data.question2.table.tbody5}</td>
+                              <td>{data.question2.table.tbody6}</td>
+                            </tr>
+                            <tr>
+                              <td className="table_column">
+                                {data.question2.table.tbody7}
+                              </td>
+                              <td>{data.question2.table.tbody8}</td>
+                              <td>{data.question2.table.tbody9}</td>
+                            </tr>
+                            <tr>
+                              <td className="table_column">
+                                {data.question2.table.tbody10}
+                              </td>
+                              <td>{data.question2.table.tbody11}</td>
+                              <td>{data.question2.table.tbody12}</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    ) : null}
                     {data.question2.result
                       ? data.question2.result.map((result, idx) => (
                           <Paragraph key={`result2-${idx}`}>{result}</Paragraph>
                         ))
                       : null}
+                  </div>
+                </div>
+              ) : null}
+              {data.question3 ? (
+                <div className="text_container">
+                  <div className="question_container">
+                    <Text>{data.question3.question}</Text>
+                  </div>
+                  <div className="answer_container">
+                    {data.question3.answer.map((answer, idx) => (
+                      <Paragraph key={`answer3-${idx}`}>{answer}</Paragraph>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
+              {data.question4 ? (
+                <div className="text_container">
+                  <div className="question_container">
+                    <Text>{data.question4.question}</Text>
+                  </div>
+                  <div className="answer_container">
+                    {data.question4.answer.map((answer, idx) => (
+                      <Paragraph key={`answer4-${idx}`}>{answer}</Paragraph>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
+              {data.question5 ? (
+                <div className="text_container">
+                  <div className="question_container">
+                    <Text>{data.question5.question}</Text>
+                  </div>
+                  <div className="answer_container">
+                    {data.question5.answer.map((answer, idx) => (
+                      <Paragraph key={`answer5-${idx}`}>{answer}</Paragraph>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
+              {data.question6 ? (
+                <div className="text_container">
+                  <div className="question_container">
+                    <Text>{data.question6.question}</Text>
+                  </div>
+                  <div className="answer_container">
+                    {data.question6.answer.map((answer, idx) => (
+                      <Paragraph key={`answer6-${idx}`}>{answer}</Paragraph>
+                    ))}
                   </div>
                 </div>
               ) : null}
@@ -271,49 +448,51 @@ export default function Chosen({ params }: ChosenPageProps) {
                       </Paragraph>
                     ))}
                   </div>
-                  <div className="table_container">
-                    <table>
-                      <thead>
-                        <tr>
-                          <th className="table_column">
-                            {data.addition2.table.thead1}
-                          </th>
-                          <th>{data.addition2.table.thead2}</th>
-                          <th>{data.addition2.table.thead3}</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td className="table_column">
-                            {data.addition2.table.tbody1}
-                          </td>
-                          <td>{data.addition2.table.tbody2}</td>
-                          <td>{data.addition2.table.tbody3}</td>
-                        </tr>
-                        <tr>
-                          <td className="table_column">
-                            {data.addition2.table.tbody4}
-                          </td>
-                          <td>{data.addition2.table.tbody5}</td>
-                          <td>{data.addition2.table.tbody6}</td>
-                        </tr>
-                        <tr>
-                          <td className="table_column">
-                            {data.addition2.table.tbody7}
-                          </td>
-                          <td>{data.addition2.table.tbody8}</td>
-                          <td>{data.addition2.table.tbody9}</td>
-                        </tr>
-                        <tr>
-                          <td className="table_column">
-                            {data.addition2.table.tbody10}
-                          </td>
-                          <td>{data.addition2.table.tbody11}</td>
-                          <td>{data.addition2.table.tbody12}</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                  {data.addition2.table ? (
+                    <div className="table_container">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th className="table_column">
+                              {data.addition2.table.thead1}
+                            </th>
+                            <th>{data.addition2.table.thead2}</th>
+                            <th>{data.addition2.table.thead3}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td className="table_column">
+                              {data.addition2.table.tbody1}
+                            </td>
+                            <td>{data.addition2.table.tbody2}</td>
+                            <td>{data.addition2.table.tbody3}</td>
+                          </tr>
+                          <tr>
+                            <td className="table_column">
+                              {data.addition2.table.tbody4}
+                            </td>
+                            <td>{data.addition2.table.tbody5}</td>
+                            <td>{data.addition2.table.tbody6}</td>
+                          </tr>
+                          <tr>
+                            <td className="table_column">
+                              {data.addition2.table.tbody7}
+                            </td>
+                            <td>{data.addition2.table.tbody8}</td>
+                            <td>{data.addition2.table.tbody9}</td>
+                          </tr>
+                          <tr>
+                            <td className="table_column">
+                              {data.addition2.table.tbody10}
+                            </td>
+                            <td>{data.addition2.table.tbody11}</td>
+                            <td>{data.addition2.table.tbody12}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  ) : null}
                 </div>
               ) : null}
             </div>
