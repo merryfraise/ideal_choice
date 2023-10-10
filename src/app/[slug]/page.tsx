@@ -30,7 +30,7 @@ const chosenStyle = css`
   }
 
   h1 {
-    padding-top: 16px;
+    margin-top: 16px;
     font-size: 44px;
     line-height: 60px;
     text-shadow: var(--white-glow);
@@ -38,23 +38,23 @@ const chosenStyle = css`
 
   p,
   ul {
-    padding-top: 16px;
+    margin-top: 24px;
   }
 
   .strong_container {
     font-weight: var(--semibold-weight);
 
     p:not(:nth-of-type(2)) {
-      padding-top: 32px;
+      margin-top: 40px;
     }
 
     p:nth-of-type(2) {
-      padding-top: 0px;
+      margin-top: 0px;
     }
   }
 
   li {
-    padding-top: 4px;
+    margin-top: 8px;
   }
 
   table {
@@ -105,7 +105,7 @@ const hiddenStyle = css`
   p,
   .reason_container,
   .list_container {
-    padding-top: 16px;
+    margin-top: 24px;
   }
 
   .question_container,
@@ -116,9 +116,14 @@ const hiddenStyle = css`
   }
 
   .reason_container,
-  .list_container {
+  .list_container,
+  .difference_container {
+    ul:first-of-type {
+      margin-top: 24px;
+    }
+
     ul:not(:first-of-type) {
-      padding-top: 16px;
+      margin-top: 16px;
     }
   }
 
