@@ -320,6 +320,22 @@ export default function Chosen({ params }: ChosenPageProps) {
                           </Paragraph>
                         ))
                       : null}
+                    {data.question1.difference ? (
+                      <div className="difference_container">
+                        <ul>
+                          {data.question1.difference.map((difference, idx) => (
+                            <li key={`difference1-${idx}`}>{difference}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : null}
+                    {data.question1.conclusion
+                      ? data.question1.conclusion.map((conclusion, idx) => (
+                          <Paragraph key={`conclusion1-${idx}`}>
+                            {conclusion}
+                          </Paragraph>
+                        ))
+                      : null}
                   </div>
                 </div>
               ) : null}
