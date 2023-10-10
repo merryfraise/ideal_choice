@@ -353,6 +353,15 @@ export default function Chosen({ params }: ChosenPageProps) {
                     {data.question2.answer.map((answer, idx) => (
                       <Paragraph key={`answer2-${idx}`}>{answer}</Paragraph>
                     ))}
+                    {data.question2.reason ? (
+                      <div className="reason_container">
+                        <ul>
+                          {data.question2.reason.map((reason, idx) => (
+                            <li key={`reason2-${idx}`}>{reason}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : null}
                     {data.question2.table ? (
                       <div className="table_container">
                         <table>
