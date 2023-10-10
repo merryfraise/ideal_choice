@@ -3613,6 +3613,1029 @@
           "이 표는 두 회사의 제품을 비교하는 간략한 개요일 뿐입니다. 더 자세한 정보는 각 회사의 웹사이트를 방문하십시오."
         ]
       }
+    },
+    {
+      "id": 45,
+      "number": 2,
+      "question1": {
+        "question": "맥도날드와 버거킹 중 어느 쪽이 좋은가?",
+        "answer": [
+          "맥도날드와 버거킹은 모두 세계에서 가장 인기 있는 패스트푸드 체인 중 두 곳입니다. 두 회사 모두 강점과 약점이 있으며, 어느 회사가 더 좋은지는 개인의 필요와 선호도에 따라 다릅니다."
+        ],
+        "comparison": {
+          "advantage1": [
+            "맥도날드의 장점",
+            "- 전 세계적으로 가장 많은 매장을 보유하고 있음",
+            "- 다양한 메뉴를 제공함",
+            "- 저렴한 가격"
+          ],
+          "disadvantage1": [
+            "맥도날드의 단점",
+            "- 건강에 좋지 않은 음식을 제공한다는 비판을 받음",
+            "- 일부 메뉴의 품질이 떨어질 수 있음"
+          ],
+          "advantage2": [
+            "버거킹의 장점",
+            "- 맛있는 햄버거를 제공함",
+            "- 다양한 메뉴를 제공함",
+            "- 건강에 좋은 메뉴를 제공함"
+          ],
+          "disadvantage2": [
+            "버거킹의 단점",
+            "- 매장 수가 맥도날드보다 적음",
+            "- 일부 메뉴가 비쌀 수 있음"
+          ]
+        },
+        "result": [
+          "결론적으로, 맥도날드와 버거킹 중 어느 쪽이 더 좋은지는 개인의 필요와 선호도에 따라 다릅니다."
+        ],
+        "list": [
+          "- 편리함과 저렴한 가격을 찾고 있다면 맥도날드가 더 나은 선택일 수 있습니다. 맥도날드는 전 세계적으로 가장 많은 매장을 보유하고 있으며, 다양한 메뉴를 저렴한 가격에 제공합니다.",
+          "- 맛있는 햄버거와 건강에 좋은 메뉴를 찾고 있다면 버거킹이 더 나은 선택일 수 있습니다. 버거킹은 맛있는 햄버거를 제공하며, 최근에는 건강에 좋은 메뉴도 출시하고 있습니다."
+        ]
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [
+          "둘 중 한쪽을 선택해야 한다면, 저는 개인적으로 버거킹을 선택하겠습니다. 저는 맛있는 햄버거와 건강에 좋은 메뉴를 찾고 있기 때문입니다. 버거킹은 맛있는 햄버거를 제공하며, 최근에는 건강에 좋은 메뉴도 출시하고 있습니다.",
+          "물론, 편리함과 저렴한 가격을 찾고 있다면 맥도날드가 더 나은 선택일 수 있습니다."
+        ]
+      }
+    },
+    {
+      "id": 46,
+      "number": 1,
+      "question1": {
+        "question": "일론 머스크와 마크 저커버그 중 어느 쪽이 좋은가?",
+        "answer": [
+          "일론 머스크와 마크 저커버그는 모두 세계에서 가장 유명한 기업가 중 두 명입니다. 두 사람은 모두 기술 분야에서 큰 성공을 거두었지만, 그들의 비전과 가치는 매우 다릅니다.",
+          "일론 머스크는 혁신과 새로운 기술 개발에 중점을 두는 기업가입니다. 그는 테슬라, 스페이스X, OpenAI, Neuralink 등 다양한 혁신적인 기업을 설립했습니다. 머스크는 화성 이주, 자율 주행 자동차, 인공 지능 등 미래의 문제를 해결하기 위해 노력하고 있습니다.",
+          "마크 저커버그는 소셜 미디어와 연결성에 중점을 두는 기업가입니다. 그는 페이스북을 설립하여 전 세계 수십억 명의 사람들을 연결했습니다. 저커버그는 소셜 미디어를 사용하여 사람들을 더 가깝게 연결하고 세상을 더 나은 곳으로 만들기를 원합니다.",
+          "둘 중 어느 쪽이 더 좋은지 판단하는 것은 개인적인 선호도에 따라 다릅니다."
+        ],
+        "list": [
+          "- 혁신과 새로운 기술을 찾고 있다면 일론 머스크가 더 나은 선택일 수 있습니다. 머스크는 미래의 문제를 해결하기 위해 노력하고 있으며, 그의 기업은 기술 분야에서 중요한 발전을 이루었습니다.",
+          "- 소셜 미디어와 연결성을 찾고 있다면 마크 저커버그가 더 나은 선택일 수 있습니다. 저커버그의 기업은 전 세계 수십억 명의 사람들을 연결했으며, 그는 소셜 미디어를 사용하여 세상을 더 나은 곳으로 만들기를 원합니다."
+        ],
+        "opinion": [
+          "개인적으로 저는 일론 머스크를 더 좋아합니다. 저는 그의 혁신적인 사고방식과 미래를 향한 비전에 감명받았습니다. 저는 머스크가 화성 이주, 자율 주행 자동차, 인공 지능 등과 같은 도전적인 문제를 해결할 수 있다고 믿습니다.",
+          "물론, 마크 저커버그도 존경합니다. 그는 소셜 미디어를 사용하여 세상을 더 나은 곳으로 만들기 위해 노력하고 있습니다. 저커버그의 기업은 전 세계 수십억 명의 사람들에게 연결의 힘을 제공했습니다."
+        ]
+      }
+    },
+    {
+      "id": 47,
+      "number": 2,
+      "question1": {
+        "question": "디즈니와 지브리 중 어느 쪽이 좋은가?",
+        "answer": [
+          "디즈니와 지브리는 모두 세계적으로 유명한 애니메이션 회사로, 다양한 장르의 작품을 제작하고 있습니다. 두 회사는 서로 다른 장점과 특징을 가지고 있으며, 각자의 팬층을 가지고 있습니다.",
+          "디즈니는 1923년에 설립된 미국의 애니메이션 회사로, 전 세계적으로 가장 유명한 애니메이션 회사 중 하나입니다. 디즈니는 \"미키 마우스\", \"덤보\", \"백설공주와 일곱 난쟁이\", \"알라딘\", \"겨울왕국\" 등 수많은 인기 애니메이션을 제작했습니다. 디즈니의 애니메이션은 화려한 그래픽과 흥미진진한 스토리, 그리고 감동적인 메시지로 많은 사람들에게 사랑받고 있습니다.",
+          "지브리는 1985년에 설립된 일본의 애니메이션 회사로, \"센과 치히로의 행방불명\", \"하울의 움직이는 성\", \"모노노케 히메\", \"귀를 기울이면\", \"이웃의 토토로\" 등 수많은 인기 애니메이션을 제작했습니다. 지브리의 애니메이션은 아름다운 배경과 따뜻한 감성, 그리고 철학적인 메시지로 많은 사람들에게 사랑받고 있습니다."
+        ],
+        "result": [
+          "따라서 디즈니와 지브리 중 어느 쪽이 더 좋은지는 개인의 취향과 선호도에 따라 달라질 수 있습니다.",
+          "디즈니를 더 좋아하는 사람은 화려한 그래픽과 흥미진진한 스토리, 그리고 감동적인 메시지를 좋아하는 사람일 가능성이 높습니다.",
+          "지브리를 더 좋아하는 사람은 아름다운 배경과 따뜻한 감성, 그리고 철학적인 메시지를 좋아하는 사람일 가능성이 높습니다."
+        ],
+        "opinion": [
+          "개인적으로는 디즈니와 지브리 모두 좋아합니다. 디즈니의 애니메이션은 화려한 그래픽과 흥미진진한 스토리로 많은 사람들에게 즐거움을 주고, 지브리의 애니메이션은 아름다운 배경과 따뜻한 감성으로 많은 사람들에게 위로와 감동을 주는 애니메이션이기 때문입니다."
+        ]
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [
+          "둘 중 한 쪽을 선택해야 한다면, 저는 지브리를 선택하겠습니다. 저는 아름다운 배경과 따뜻한 감성, 그리고 철학적인 메시지를 좋아하는 사람입니다. 지브리의 애니메이션은 아름다운 배경과 따뜻한 감성으로 많은 사람들에게 위로와 감동을 주었습니다. 이러한 모습은 저에게 많은 영감을 줍니다.",
+          "물론, 디즈니도 훌륭한 애니메이션 회사입니다. 디즈니의 애니메이션은 화려한 그래픽과 흥미진진한 스토리로 많은 사람들에게 즐거움을 줍니다. 그러나, 저는 개인적으로 지브리의 아름다운 배경과 따뜻한 감성, 그리고 철학적인 메시지에 더 매력을 느낍니다."
+        ],
+        "result": [
+          "결론적으로, 디즈니와 지브리는 모두 훌륭한 애니메이션 회사이며, 어느 쪽을 더 좋아하는지는 개인의 취향과 선호도에 따라 달라진다고 할 수 있습니다."
+        ]
+      }
+    },
+    {
+      "id": 48,
+      "number": 2,
+      "question1": {
+        "question": "비틀즈와 롤링 스톤즈 중 어느 쪽이 좋은가?",
+        "answer": [
+          "비틀즈와 롤링 스톤즈는 모두 20세기 최고의 록 밴드 중 두 곳입니다. 두 밴드 모두 전 세계적으로 수억 장의 음반을 판매했으며, 그들의 음악은 록 음악의 발전에 큰 영향을 미쳤습니다.",
+          "비틀즈는 팝 록과 록 앤 롤의 선구자입니다. 그들은 단순하고 매력적인 멜로디와 강렬한 라이브 공연으로 인기를 얻었습니다. 비틀즈의 대표곡으로는 \"Yesterday\", \"I Want to Hold Your Hand\", \"Hey Jude\" 등이 있습니다.",
+          "롤링 스톤즈는 블루스 록과 록의 선구자입니다. 그들은 공격적인 사운드와 강렬한 무대 매너로 인기를 얻었습니다. 롤링 스톤즈의 대표곡으로는 \"Satisfaction\", \"Start Me Up\", \"Brown Sugar\" 등이 있습니다.",
+          "둘 중 어느 쪽이 더 좋은지 판단하는 것은 개인적인 선호도에 따라 다릅니다."
+        ],
+        "list": [
+          "- 팝 록과 록 앤 롤을 좋아한다면 비틀즈가 더 나은 선택일 수 있습니다. 비틀즈는 단순하고 매력적인 멜로디와 강렬한 라이브 공연으로 인기를 얻었습니다.",
+          "- 블루스 록과 록을 좋아한다면 롤링 스톤즈가 더 나은 선택일 수 있습니다. 롤링 스톤즈는 공격적인 사운드와 강렬한 무대 매너로 인기를 얻었습니다."
+        ],
+        "opinion": [
+          "개인적으로 저는 비틀즈와 롤링 스톤즈 모두를 좋아합니다. 비틀즈는 팝 록의 역사에 큰 영향을 미쳤고, 롤링 스톤즈는 블루스 록의 역사에 큰 영향을 미쳤습니다. 두 밴드 모두 음악의 발전에 큰 공헌을 했습니다."
+        ]
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [
+          "둘 중 한 쪽을 선택해야 한다면, 저는 비틀즈를 선택하겠습니다. 비틀즈는 팝 록과 록 앤 롤의 선구자이며, 그들의 음악은 전 세계적으로 수억 명의 사람들에게 영향을 미쳤습니다. 비틀즈는 단순하고 매력적인 멜로디와 강렬한 라이브 공연으로 유명하며, 그들의 음악은 항상 시대를 초월한 매력을 가지고 있습니다.",
+          "물론, 롤링 스톤즈도 훌륭한 밴드입니다. 그들은 블루스 록과 록의 선구자이며, 그들의 음악은 전 세계적으로 수억 명의 사람들에게 영향을 미쳤습니다. 롤링 스톤즈는 공격적인 사운드와 강렬한 무대 매너로 유명하며, 그들의 음악은 항상 에너지와 열정으로 가득 차 있습니다."
+        ],
+        "result": [
+          "결국, 비틀즈와 롤링 스톤즈 중 어느 쪽이 더 좋은지는 개인적인 선호도에 따라 다릅니다. 팝 록과 록 앤 롤을 좋아한다면 비틀즈가 더 나은 선택일 수 있습니다. 블루스 록과 록을 좋아한다면 롤링 스톤즈가 더 나은 선택일 수 있습니다."
+        ]
+      }
+    },
+    {
+      "id": 49,
+      "number": 1,
+      "question1": {
+        "question": "마이클 잭슨과 마돈나 중 어느 쪽이 좋은가?",
+        "answer": [
+          "마이클 잭슨과 마돈나는 모두 팝 음악의 역사에 큰 영향을 미친 두 명의 전설적인 아티스트입니다. 두 사람 모두 전 세계적으로 수억 장의 음반을 판매했으며, 그들의 음악과 무대 매너는 전 세계의 팬들을 매료시켰습니다.",
+          "마이클 잭슨은 팝 음악의 황제입니다. 그는 뛰어난 보컬 실력과 댄스 실력으로 전 세계적인 인기를 얻었습니다. 마이클 잭슨의 대표곡으로는 \"Billie Jean\", \"Thriller\", \"Black or White\" 등이 있습니다.",
+          "마돈나는 팝 음악의 여왕입니다. 그녀는 도전적이고 파격적인 무대 매너로 유명합니다. 마돈나의 대표곡으로는 \"Like a Virgin\", \"Material Girl\", \"Vogue\" 등이 있습니다.",
+          "둘 중 어느 쪽이 더 좋은지 판단하는 것은 개인적인 선호도에 따라 다릅니다."
+        ],
+        "list": [
+          "- 클래식한 팝 음악을 좋아한다면 마이클 잭슨이 더 나은 선택일 수 있습니다. 마이클 잭슨은 뛰어난 보컬 실력과 댄스 실력으로 전 세계적인 인기를 얻었습니다.",
+          "- 도전적이고 파격적인 팝 음악을 좋아한다면 마돈나가 더 나은 선택일 수 있습니다. 마돈나는 도전적이고 파격적인 무대 매너로 유명합니다."
+        ],
+        "opinion": [
+          "개인적으로 저는 마이클 잭슨을 더 좋아합니다. 저는 그의 뛰어난 보컬 실력과 댄스 실력에 감명받았습니다. 마이클 잭슨은 팝 음악의 역사에 큰 영향을 미친 전설적인 아티스트입니다.",
+          "물론, 마돈나도 훌륭한 아티스트입니다. 그녀는 도전적이고 파격적인 무대 매너로 전 세계의 팬들을 매료시켰습니다. 마돈나는 팝 음악의 발전에 큰 공헌을 했습니다.",
+          "결국, 마이클 잭슨과 마돈나 중 어느 쪽이 더 좋은지는 개인적인 선호도에 따라 다릅니다. 클래식한 팝 음악을 좋아한다면 마이클 잭슨이 더 나은 선택일 수 있습니다. 도전적이고 파격적인 팝 음악을 좋아한다면 마돈나가 더 나은 선택일 수 있습니다."
+        ]
+      }
+    },
+    {
+      "id": 50,
+      "number": 1,
+      "question1": {
+        "question": "비욘세와 리한나 중 어느 쪽이 좋은가?",
+        "answer": [
+          "비욘세와 리한나는 모두 세계에서 가장 성공한 여성 팝 가수 중 두 명입니다. 두 사람 모두 전 세계적으로 수백만 장의 음반을 판매했으며, 그들의 음악은 전 세계의 팬들에게 사랑받고 있습니다.",
+          "비욘세는 강력한 보컬 실력과 퍼포먼스로 유명합니다. 그녀는 솔, R&B, 힙합 등 다양한 장르를 소화하며, 그녀의 음악은 항상 에너지와 열정으로 가득 차 있습니다. 비욘세의 대표곡으로는 \"Crazy in Love\", \"Single Ladies (Put a Ring on It)\", \"Halo\" 등이 있습니다.",
+          "리한나는 다양한 장르를 넘나드는 음악 스타일로 유명합니다. 그녀는 팝, 댄스 팝, R&B, 힙합 등 다양한 장르를 소화하며, 그녀의 음악은 항상 신선하고 세련된 느낌을 줍니다. 리한나의 대표곡으로는 \"Umbrella\", \"Work\", \"Diamonds\" 등이 있습니다.",
+          "둘 중 어느 쪽이 더 좋은지 판단하는 것은 개인적인 선호도에 따라 다릅니다."
+        ],
+        "list": [
+          "- 강력한 보컬 실력과 퍼포먼스를 좋아한다면 비욘세가 더 나은 선택일 수 있습니다.",
+          "- 다양한 장르를 넘나드는 음악 스타일을 좋아한다면 리한나가 더 나은 선택일 수 있습니다."
+        ],
+        "opinion": [
+          "개인적으로 저는 비욘세를 더 좋아합니다. 저는 그녀의 강력한 보컬 실력과 퍼포먼스에 감명받았습니다. 비욘세는 팝 음악의 역사에 큰 영향을 미친 전설적인 아티스트입니다.",
+          "물론, 리한나도 훌륭한 아티스트입니다. 그녀는 다양한 장르를 넘나드는 음악 스타일로 전 세계의 팬들을 매료시켰습니다. 리한나는 팝 음악의 발전에 큰 공헌을 했습니다.",
+          "결국, 비욘세와 리한나 중 어느 쪽이 더 좋은지는 개인적인 선호도에 따라 다릅니다. 강력한 보컬 실력과 퍼포먼스를 좋아한다면 비욘세가 더 나은 선택일 수 있습니다. 다양한 장르를 넘나드는 음악 스타일을 좋아한다면 리한나가 더 나은 선택일 수 있습니다."
+        ]
+      }
+    },
+    {
+      "id": 51,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 52,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 53,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 54,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 55,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 56,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 57,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 58,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 59,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 60,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 61,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 62,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 63,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 64,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 65,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 66,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 67,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 68,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 69,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 70,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 71,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 72,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 73,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 74,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 75,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 76,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 77,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 78,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 79,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 80,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 81,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 82,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 83,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 84,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 85,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 86,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 87,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 88,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 89,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 90,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 91,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 92,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 93,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 94,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 95,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 96,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 97,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 98,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 99,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
+    },
+    {
+      "id": 100,
+      "number": 2,
+      "question1": {
+        "question": "",
+        "answer": [],
+        "comparison": {},
+        "result": [],
+        "list": []
+      },
+      "question2": {
+        "question": "둘 중 한 쪽을 선택해야 한다면?",
+        "answer": [],
+        "result": []
+      },
+      "addition1": { "addition": "*추가 정보", "information": [] }
     }
   ]
 }
