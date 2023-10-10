@@ -47,6 +47,10 @@ const chosenStyle = css`
     p:not(:nth-of-type(2)) {
       padding-top: 32px;
     }
+
+    p:nth-of-type(2) {
+      padding-top: 0px;
+    }
   }
 
   li {
