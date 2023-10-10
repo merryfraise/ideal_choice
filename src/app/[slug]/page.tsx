@@ -313,6 +313,13 @@ export default function Chosen({ params }: ChosenPageProps) {
                         </ul>
                       </div>
                     ) : null}
+                    {data.question1.opinion
+                      ? data.question1.opinion.map((opinion, idx) => (
+                          <Paragraph key={`opinion1-${idx}`}>
+                            {opinion}
+                          </Paragraph>
+                        ))
+                      : null}
                   </div>
                 </div>
               ) : null}
