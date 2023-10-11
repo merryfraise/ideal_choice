@@ -266,20 +266,24 @@ export default function Chosen({ params }: ChosenPageProps) {
                               <td>{data.question1.table.tbody5}</td>
                               <td>{data.question1.table.tbody6}</td>
                             </tr>
-                            <tr>
-                              <td className="table_column">
-                                {data.question1.table.tbody7}
-                              </td>
-                              <td>{data.question1.table.tbody8}</td>
-                              <td>{data.question1.table.tbody9}</td>
-                            </tr>
-                            <tr>
-                              <td className="table_column">
-                                {data.question1.table.tbody10}
-                              </td>
-                              <td>{data.question1.table.tbody11}</td>
-                              <td>{data.question1.table.tbody12}</td>
-                            </tr>
+                            {data.question1.table.tbody7 ? (
+                              <tr>
+                                <td className="table_column">
+                                  {data.question1.table.tbody7}
+                                </td>
+                                <td>{data.question1.table.tbody8}</td>
+                                <td>{data.question1.table.tbody9}</td>
+                              </tr>
+                            ) : null}
+                            {data.question1.table.tbody10 ? (
+                              <tr>
+                                <td className="table_column">
+                                  {data.question1.table.tbody10}
+                                </td>
+                                <td>{data.question1.table.tbody11}</td>
+                                <td>{data.question1.table.tbody12}</td>
+                              </tr>
+                            ) : null}
                             {data.question1.table.tbody13 ? (
                               <tr>
                                 <td className="table_column">
@@ -362,6 +366,13 @@ export default function Chosen({ params }: ChosenPageProps) {
                         </ul>
                       </div>
                     ) : null}
+                    {data.question2.opinion
+                      ? data.question2.opinion.map((opinion, idx) => (
+                          <Paragraph key={`opinion2-${idx}`}>
+                            {opinion}
+                          </Paragraph>
+                        ))
+                      : null}
                     {data.question2.table ? (
                       <div className="table_container">
                         <table>
