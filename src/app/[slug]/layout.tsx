@@ -228,7 +228,7 @@ export default function ChosenLayout({ params, children }: ChosenLayoutProps) {
               />
             </Link>
           ) : (
-            <Link href={`/${params.slug}`}>
+            <Link href={`/random`}>
               <Image
                 src="/images/nav_white.png"
                 alt="navigation"
