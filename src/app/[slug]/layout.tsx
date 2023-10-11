@@ -108,6 +108,7 @@ const chosenLayoutStyle = css`
     top: 0;
     margin-right: 34px;
     margin-top: 34px;
+    transform: rotate(45deg);
   }
 `;
 
@@ -219,7 +220,7 @@ export default function ChosenLayout({ params, children }: ChosenLayoutProps) {
       <article className={route.includes('hidden') ? 'hidden' : ''}>
         <nav>
           {route.includes('hidden') ? (
-            <Link href={`/random`}>
+            <Link href={`/${paramsSlug}`}>
               <Image
                 src="/images/nav_purewhite.png"
                 alt="navigation"
