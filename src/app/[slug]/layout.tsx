@@ -9,6 +9,7 @@ import Text from '@/components/atoms/Text';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { useRouter } from 'next/navigation';
 
 const chosenLayoutStyle = css`
   height: 100vh !important;
@@ -110,6 +111,15 @@ const chosenLayoutStyle = css`
     margin-top: 34px;
     transform: rotate(45deg);
   }
+
+  button {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
 `;
 
 type ChosenLayoutProps = {
@@ -121,6 +131,7 @@ type ChosenLayoutProps = {
 
 export default function ChosenLayout({ params, children }: ChosenLayoutProps) {
   const route = Route();
+  const router = useRouter();
   const paramsSlug = params.slug.includes('hidden')
     ? params.slug.slice(6)
     : params.slug;
@@ -220,23 +231,23 @@ export default function ChosenLayout({ params, children }: ChosenLayoutProps) {
       <article className={route.includes('hidden') ? 'hidden' : ''}>
         <nav>
           {route.includes('hidden') ? (
-            <Link href={`/${paramsSlug}`}>
+            <button onClick={() => router.back()}>
               <Image
                 src="/images/nav_purewhite.png"
                 alt="navigation"
                 width={46}
                 height={46}
               />
-            </Link>
+            </button>
           ) : (
-            <Link href={`/random`}>
+            <button onClick={() => router.back()}>
               <Image
                 src="/images/nav_white.png"
                 alt="navigation"
                 width={46}
                 height={46}
               />
-            </Link>
+            </button>
           )}
         </nav>
         {children}
