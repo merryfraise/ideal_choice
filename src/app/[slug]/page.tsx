@@ -8,6 +8,7 @@ import Headings from '@/components/atoms/Headings';
 import Paragraph from '@/components/atoms/Paragraph';
 import Route from '@/utils/Route';
 import Text from '@/components/atoms/Text';
+import { useRouter } from 'next/navigation';
 
 const chosenStyle = css`
   height: 100%;
@@ -162,6 +163,7 @@ type ChosenPageProps = {
 
 export default function Chosen({ params }: ChosenPageProps) {
   const route = Route();
+  const router = useRouter();
   const paramsSlug = params.slug.includes('hidden')
     ? params.slug.slice(6)
     : params.slug;
@@ -549,6 +551,9 @@ export default function Chosen({ params }: ChosenPageProps) {
               ) : null}
             </div>
           ))}
+          <button className="hidden_button" onClick={() => router.back()}>
+            뒤로
+          </button>
         </div>
       ) : (
         <div css={chosenStyle}>
@@ -679,6 +684,9 @@ export default function Chosen({ params }: ChosenPageProps) {
               </div>
             </div>
           ))}
+          <button className="chosen_button" onClick={() => router.back()}>
+            목록으로
+          </button>
         </div>
       )}
     </>

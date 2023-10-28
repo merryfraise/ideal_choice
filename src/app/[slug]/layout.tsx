@@ -103,22 +103,25 @@ const chosenLayoutStyle = css`
     background-color: var(--violet1);
   }
 
-  nav {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-right: 34px;
-    margin-top: 34px;
-    transform: rotate(45deg);
+  button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: var(--small-font);
+    font-weight: var(--semibold-weight);
+    cursor: pointer;
   }
 
-  button {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+  .chosen_button {
+    font-family: 'Eulyoo1945';
+    margin-top: 40px;
+    color: var(--violet1);
+  }
+
+  .hidden_button {
+    font-family: 'Pretendard';
+    margin-top: 64px;
+    color: var(--black);
   }
 `;
 
@@ -131,7 +134,6 @@ type ChosenLayoutProps = {
 
 export default function ChosenLayout({ params, children }: ChosenLayoutProps) {
   const route = Route();
-  const router = useRouter();
   const paramsSlug = params.slug.includes('hidden')
     ? params.slug.slice(6)
     : params.slug;
@@ -229,27 +231,6 @@ export default function ChosenLayout({ params, children }: ChosenLayoutProps) {
         </div>
       </aside>
       <article className={route.includes('hidden') ? 'hidden' : ''}>
-        <nav>
-          {route.includes('hidden') ? (
-            <button onClick={() => router.back()}>
-              <Image
-                src="/images/nav_purewhite.png"
-                alt="navigation"
-                width={46}
-                height={46}
-              />
-            </button>
-          ) : (
-            <button onClick={() => router.back()}>
-              <Image
-                src="/images/nav_white.png"
-                alt="navigation"
-                width={46}
-                height={46}
-              />
-            </button>
-          )}
-        </nav>
         {children}
       </article>
     </section>
