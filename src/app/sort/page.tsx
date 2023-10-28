@@ -16,7 +16,7 @@ const sortStyle = css`
   }
 
   .subject_container {
-    margin: 10px;
+    margin: 26px 0 0 16px;
     color: var(--violet3);
     font-size: var(--small-font);
   }
