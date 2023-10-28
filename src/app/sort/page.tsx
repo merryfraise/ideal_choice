@@ -39,7 +39,6 @@ const sortStyle = css`
   }
 
   a:hover {
-    font-size: 26px;
     text-shadow: var(--white-glow);
   }
 `;

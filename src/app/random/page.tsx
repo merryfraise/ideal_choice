@@ -41,7 +41,6 @@ const RandomStyle = css`
   }
 
   a:hover {
-    font-size: 48px;
     text-shadow: var(--white-glow);
   }
 
