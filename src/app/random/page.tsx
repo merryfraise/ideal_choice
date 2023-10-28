@@ -4,7 +4,7 @@
 import data from '@/database/data.json';
 import { css } from '@emotion/react';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const RandomStyle = css`
   height: 100%;
@@ -73,23 +73,61 @@ const RandomStyle = css`
   }
 `;
 
+type Choice = {
+  id: number;
+  sortId: number;
+  question: string;
+  list: Array<string>;
+  bard: number;
+  direction: string;
+  chapter: string;
+  title: string;
+  first1: string;
+  first2?: string;
+  freason?: string;
+  ereason?: string;
+  reason?: Array<string>;
+  ep1?: string;
+  ep2?: string;
+  ep3?: string;
+  ep4?: string;
+  p1: string;
+  p2?: string;
+  p3?: string;
+  p4?: string;
+  p5?: string;
+  p6?: string;
+  p7?: string;
+  before?: string;
+  tablble?: object;
+  after1?: string;
+  after2?: string;
+  additional?: string;
+};
+
 export default function Random() {
+  const [shuffledData, setShuffledData] = useState<Array<Choice>>([]);
   const [animate, setAnimate] = useState<Boolean>(true);
   const onSlow = () => setAnimate(false);
   const onRun = () => setAnimate(true);
+
+  useEffect(
+    () => setShuffledData(data.choice.sort(() => Math.random() - 0.5)),
+    []
+  );
 
   return (
     <div css={RandomStyle}>
       <ul className="slide_container">
         <div className={(animate ? '' : 'slow ') + 'before'}>
-          {data.choice.map((choice) => (
+          {shuffledData.map((choice) => (
             <li key={choice.id} onMouseEnter={onSlow} onMouseLeave={onRun}>
               <Link href={`/${choice.id}`}>{choice.question}</Link>
             </li>
           ))}
         </div>
         <div className={(animate ? '' : 'slow ') + 'after'}>
-          {data.choice.map((choice) => (
+          {shuffledData.map((choice) => (
             <li key={choice.id} onMouseEnter={onSlow} onMouseLeave={onRun}>
               <Link href={`/${choice.id}`}>{choice.question}</Link>
             </li>
