@@ -95,6 +95,7 @@ const chosenLayoutStyle = css`
   article {
     background-image: url(/images/intro_bg.jpg);
     background-size: cover;
+    background-position: center;
     width: calc(100% - 682px);
   }
 
