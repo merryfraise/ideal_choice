@@ -5,6 +5,7 @@ import Text from '@/components/atoms/Text';
 import data from '@/database/data.json';
 import { css } from '@emotion/react';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 const sortStyle = css`
   height: 100%;
@@ -43,7 +44,43 @@ const sortStyle = css`
   }
 `;
 
+type Choice = {
+  id: number;
+  sortId: number;
+  question: string;
+  list: Array<string>;
+  bard: number;
+  direction: string;
+  chapter: string;
+  title: string;
+  first1: string;
+  first2?: string;
+  freason?: string;
+  ereason?: string;
+  reason?: Array<string>;
+  ep1?: string;
+  ep2?: string;
+  ep3?: string;
+  ep4?: string;
+  p1: string;
+  p2?: string;
+  p3?: string;
+  p4?: string;
+  p5?: string;
+  p6?: string;
+  p7?: string;
+  before?: string;
+  tablble?: object;
+  after1?: string;
+  after2?: string;
+  additional?: string;
+};
+
 export default function Sort() {
+  const [originalData, setOriginalData] = useState<Array<Choice>>([]);
+
+  useEffect(() => setOriginalData(data.choice), []);
+
   return (
     <div css={sortStyle}>
       {data.sort.map((sort) => (
@@ -52,7 +89,7 @@ export default function Sort() {
             <Text>{sort.subject}</Text>
           </div>
           <div className="choice_container">
-            {data.choice.map((choice) =>
+            {originalData.map((choice) =>
               sort.id === choice.sortId ? (
                 <div className="choice_box" key={`choice ${choice.id}`}>
                   <Link href={`/${choice.id}`}>{choice.question}</Link>
