@@ -40,10 +40,12 @@
 
 html,
 body {
+  width: 100%;
   height: 100%;
 }
 
 body {
+  min-width: 1560px;
   background-color: var(--black);
   font-family: 'Eulyoo1945';
 }
