@@ -9,7 +9,6 @@ import Text from '@/components/atoms/Text';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { useRouter } from 'next/navigation';
 
 const chosenLayoutStyle = css`
   height: 100vh !important;

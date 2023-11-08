@@ -16,6 +16,7 @@ const sortLayoutStyle = css`
     background-size: cover;
     background-position: center;
     width: calc(100% - 682px);
+    min-width: 480px;
   }
 
   nav {
