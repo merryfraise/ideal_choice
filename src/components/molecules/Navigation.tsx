@@ -12,6 +12,7 @@ const navStyle = css`
 
   a:not(:first-of-type) {
     margin-left: 40px;
+    white-space: nowrap;
   }
 `;
 

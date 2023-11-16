@@ -12,6 +12,10 @@ const headerStyle = css`
   justify-content: space-between;
   width: 100%;
   padding: 34px;
+
+  a {
+    white-space: nowrap;
+  }
 `;
 
 export default function Header() {
