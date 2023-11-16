@@ -16,6 +16,7 @@ const chosenLayoutStyle = css`
 
   aside {
     width: 682px;
+    min-width: 682px;
     height: 100%;
     border-right: solid 2px var(--violet1);
   }
@@ -96,6 +97,7 @@ const chosenLayoutStyle = css`
     background-size: cover;
     background-position: center;
     width: calc(100% - 682px);
+    min-width: 682px;
   }
 
   article.hidden {
